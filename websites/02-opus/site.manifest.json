@@ -1,0 +1,10 @@
+{
+  "public": [
+    "index.html",
+    "site.css",
+    "site.js",
+    "site.config.js",
+    "template.js",
+    "assets"
+  ]
+}

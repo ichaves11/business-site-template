@@ -5,7 +5,7 @@ Each website owns its HTML, styles, scripts, assets, configuration, documentatio
 | Website | Folder | Preview command | Local URL |
 |---|---|---|---|
 | #1 · Approved business template | `websites/01-business` | `npm run dev:1` | http://localhost:4517 |
-| #2 · Opus | `websites/02-template` | `npm run dev:2` | http://localhost:4518 |
+| #2 · Opus | `websites/02-opus` | `npm run dev:2` | http://localhost:4518 |
 | #3 · Reserved | `websites/03-template` | `npm run dev:3` | http://localhost:4519 |
 
 Run commands from this repository's root. `npm run dev` remains an alias for website #1. A reserved website gives a clear message until it has been implemented. Stop an older preview with Ctrl+C before restarting it after this reorganization.
@@ -26,7 +26,7 @@ websites.json             # Site status, directory and preview port
 scripts/                  # Shared development tools, no website UI
 websites/
   01-business/            # Approved website #1
-  02-template/            # Opus, website #2
+  02-opus/                # Opus, website #2
   03-template/            # Reserved for website #3
 lab/                      # Ignored browser evidence, grouped by website
 ```

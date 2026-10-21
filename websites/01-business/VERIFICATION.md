@@ -30,7 +30,7 @@ Visual inspection found the compact-phone heading wrapped to three lines; the mo
 
 Observed visual sequence: calm → recognition → agency → confidence → clarity → resolve. The opening reads calmer than the intended curiosity, consistent with the requested professional direction. The route remains the largest section and primary interactive moment; the ending retains the selected choice and a real download.
 
-Evidence: `lab/redesign/verification.json`, `accessibility.json`, desktop/mobile/compact screenshots, and `scroll-desktop/`, `scroll-reduced/`, `scroll-mobile-final/` contact sheets. Development evidence is ignored and excluded from `dist/`.
+Evidence: `../../lab/website-01/redesign/verification.json`, `accessibility.json`, desktop/mobile/compact screenshots, and `scroll-desktop/`, `scroll-reduced/`, `scroll-mobile-final/` contact sheets. Development evidence is ignored and excluded from `dist/`.
 
 ## Build checks and limits
 

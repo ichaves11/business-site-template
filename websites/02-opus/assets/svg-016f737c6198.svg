@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Traveler">
+<g id="Halo" filter="url(#filter0_f_0_180)">
+<circle cx="23" cy="23" r="15" fill="white" fill-opacity="0.4"/>
+</g>
+<circle id="Core" cx="23" cy="23" r="4" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_f_0_180" x="0" y="0" width="46" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_0_180"/>
+</filter>
+</defs>
+</svg>

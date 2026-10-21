@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="32.5" height="32.5" viewBox="0 0 32.5 32.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mark">
+<circle id="Origin" cx="4.71088" cy="27.7892" r="1.72872" fill="white"/>
+<ellipse id="Petal_1_1" cx="12.0581" cy="27.7892" rx="1.46941" ry="1.03723" fill="white"/>
+<ellipse id="Petal_1_2" cx="18.9728" cy="27.7892" rx="2.59309" ry="1.72872" fill="white"/>
+<ellipse id="Petal_1_3" cx="26.3199" cy="27.7892" rx="4.14894" ry="2.67952" fill="white"/>
+<ellipse id="Petal_2_1" cx="11.0736" cy="24.1157" rx="1.46941" ry="1.03723" transform="rotate(-30 11.0736 24.1157)" fill="white"/>
+<ellipse id="Petal_2_2" cx="17.0622" cy="20.6582" rx="2.59309" ry="1.72872" transform="rotate(-30 17.0622 20.6582)" fill="white"/>
+<ellipse id="Petal_2_3" cx="23.4249" cy="16.9847" rx="4.14894" ry="2.67952" transform="rotate(-30 23.4249 16.9847)" fill="white"/>
+<ellipse id="Petal_3_1" cx="8.38455" cy="21.4265" rx="1.46941" ry="1.03723" transform="rotate(-60 8.38455 21.4265)" fill="white"/>
+<ellipse id="Petal_3_2" cx="11.842" cy="15.438" rx="2.59309" ry="1.72872" transform="rotate(-60 11.842 15.438)" fill="white"/>
+<ellipse id="Petal_3_3" cx="15.5153" cy="9.07525" rx="4.14894" ry="2.67952" transform="rotate(-60 15.5153 9.07525)" fill="white"/>
+<ellipse id="Petal_4_1" cx="4.71094" cy="20.4422" rx="1.46941" ry="1.03723" transform="rotate(-90 4.71094 20.4422)" fill="white"/>
+<ellipse id="Petal_4_2" cx="4.71088" cy="13.5273" rx="2.59309" ry="1.72872" transform="rotate(-90 4.71088 13.5273)" fill="white"/>
+<ellipse id="Petal_4_3" cx="4.71077" cy="6.18019" rx="4.14894" ry="2.67952" transform="rotate(-90 4.71077 6.18019)" fill="white"/>
+</g>
+</svg>

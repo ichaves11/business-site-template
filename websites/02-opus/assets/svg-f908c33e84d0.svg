@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logo_Mark">
+<circle id="Origin" cx="2.899" cy="17.1011" r="1.06383" fill="#141412"/>
+<ellipse id="Petal_1_1" cx="7.42037" cy="17.1011" rx="0.904255" ry="0.638298" fill="#141412"/>
+<ellipse id="Petal_1_2" cx="11.6755" cy="17.1011" rx="1.59574" ry="1.06383" fill="#141412"/>
+<ellipse id="Petal_1_3" cx="16.1968" cy="17.1011" rx="2.55319" ry="1.64894" fill="#141412"/>
+<ellipse id="Petal_2_1" cx="6.81454" cy="14.8404" rx="0.904255" ry="0.638298" transform="rotate(-30 6.81454 14.8404)" fill="#141412"/>
+<ellipse id="Petal_2_2" cx="10.4998" cy="12.7128" rx="1.59574" ry="1.06383" transform="rotate(-30 10.4998 12.7128)" fill="#141412"/>
+<ellipse id="Petal_2_3" cx="14.4153" cy="10.4521" rx="2.55319" ry="1.64894" transform="rotate(-30 14.4153 10.4521)" fill="#141412"/>
+<ellipse id="Petal_3_1" cx="5.15973" cy="13.1855" rx="0.904255" ry="0.638298" transform="rotate(-60 5.15973 13.1855)" fill="#141412"/>
+<ellipse id="Petal_3_2" cx="7.28741" cy="9.50031" rx="1.59574" ry="1.06383" transform="rotate(-60 7.28741 9.50031)" fill="#141412"/>
+<ellipse id="Petal_3_3" cx="9.54788" cy="5.58477" rx="2.55319" ry="1.64894" transform="rotate(-60 9.54788 5.58477)" fill="#141412"/>
+<ellipse id="Petal_4_1" cx="2.89904" cy="12.5798" rx="0.904255" ry="0.638298" transform="rotate(-90 2.89904 12.5798)" fill="#141412"/>
+<ellipse id="Petal_4_2" cx="2.899" cy="8.32447" rx="1.59574" ry="1.06383" transform="rotate(-90 2.899 8.32447)" fill="#141412"/>
+<ellipse id="Petal_4_3" cx="2.89894" cy="3.80319" rx="2.55319" ry="1.64894" transform="rotate(-90 2.89894 3.80319)" fill="#141412"/>
+</g>
+</svg>

@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon / sparkle" clip-path="url(#clip0_0_115)">
+<path id="Vector" d="M10 2C10.6667 8 12 9.33333 18 10C12 10.6667 10.6667 12 10 18C9.33333 12 8 10.6667 2 10C8 9.33333 9.33333 8 10 2Z" fill="#FFFFFF"/>
+<path id="Vector_2" d="M18.2222 1.77778V4.44444M18.2222 4.44444V7.11111M18.2222 4.44444H15.5556M18.2222 4.44444H20.8889" stroke-width="1.33333" stroke-linecap="round" stroke="#FFFFFF"/>
+</g>
+<defs>
+<clipPath id="clip0_0_115">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

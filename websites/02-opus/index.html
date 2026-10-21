@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opus | Your AI customer growth analyst</title>
+<meta name="description" content="Opus finds churn risk, expansion and the next best action for every customer segment.">
+<meta name="theme-color" content="#141412">
+<link rel="icon" href="assets/svg-b8a0c57925d0.svg" type="image/svg+xml">
+<link rel="icon" href="assets/ico-019dab7f8948.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/png-7d620283f3ea.png">
+<!-- Open Graph / Twitter: replace og:url and the image URL with the live domain after deploy (social networks need an absolute URL) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Opus">
+<meta property="og:title" content="Opus | Know who will churn and what to do next">
+<meta property="og:description" content="Opus finds churn risk, expansion and the next best action for every customer segment.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Opus | Know who will churn and what to do next">
+<meta name="twitter:description" content="Opus finds churn risk, expansion and the next best action for every customer segment.">
+<link rel="stylesheet" href="site.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}.dm-submit{display:none!important}</style></noscript>
+</head>
+<body>
+
+<!-- ============ STICKY HEADER (Header_Sticky 306:1201): slides in on scroll up after the hero ============ -->
+<div class="snav" id="snav" aria-hidden="true">
+  <div class="snav-in wrap">
+    <a class="logo" href="#top" aria-label="Opus home" tabindex="-1"><img src="assets/svg-f908c33e84d0.svg" alt=""><span>Opus</span></a>
+    <nav class="snav-links" aria-label="Primary">
+      <a href="#platform" data-t="Product" tabindex="-1">Product</a>
+      <a href="#how" data-t="How it works" tabindex="-1">How it works</a>
+      <a href="#pricing" data-t="Pricing" tabindex="-1">Pricing</a>
+      <a href="#faq" data-t="FAQ" tabindex="-1">FAQ</a>
+    </nav>
+    <div class="snav-r"><a class="btn btn-primary btn-s" href="#demo" data-demo tabindex="-1">Book a demo</a><button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav" tabindex="-1"><i></i><i></i></button></div>
+  </div>
+</div>
+
+
+<!-- ============ MOBILE MENU (≤900px) ============ -->
+<div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="wrap mnav-top"><a class="logo" href="#top" data-mclose aria-label="Opus home"><img src="assets/svg-5219725fe65e.svg" alt=""><span>Opus</span></a><button class="burger" type="button" aria-label="Close menu" data-mclose><i></i><i></i></button></div>
+  <nav class="wrap mnav-links" aria-label="Mobile">
+    <a href="#platform" data-mclose>Product<span>01</span></a>
+    <a href="#how" data-mclose>How it works<span>02</span></a>
+    <a href="#opportunities" data-mclose>Opportunities<span>03</span></a>
+    <a href="#campaign" data-mclose>Campaigns<span>04</span></a>
+    <a href="#pricing" data-mclose>Pricing<span>05</span></a>
+    <a href="#faq" data-mclose>FAQ<span>06</span></a>
+  </nav>
+  <div class="wrap mnav-cta">
+    <a class="btn btn-accent" href="#opportunities" data-mclose>Find growth opportunities</a>
+    <a class="btn btn-sd" href="#demo" data-demo data-mclose>Book a demo</a>
+    <p>See Opus on your own customer data.</p>
+  </div>
+</div>
+
+<!-- ============ HERO (Hero_V3) ============ -->
+<header class="hero" id="top">
+  <video class="hero-photo hero-video" autoplay muted loop playsinline preload="auto" poster="assets/jpg-ecf98b78d983.jpg" aria-hidden="true"><source src="assets/mp4-7b1e888dd7aa.mp4" type="video/mp4"></video>
+  <div class="hero-shade"></div>
+  <div class="nav wrap">
+    <a class="logo" href="#top" aria-label="Opus home"><img src="assets/svg-5219725fe65e.svg" alt=""><span>Opus</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#platform">Product</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-r"><a class="btn btn-pi btn-s" href="#demo" data-demo>Book a demo</a><button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><i></i><i></i></button></div>
+  </div>
+  <div class="hero-body wrap">
+    <div class="hero-intro">
+      <div class="hero-text">
+        <p class="t-caps">Your AI customer growth analyst</p>
+        <h1 class="t-h1"><span>Know who will churn</span><span class="mint">and what to do next.</span></h1>
+        <p class="t-b20 balance">Opus&nbsp;finds&nbsp;churn&nbsp;risk, expansion&nbsp;and&nbsp;the&nbsp;next&nbsp;best&nbsp;action for&nbsp;every&nbsp;customer&nbsp;segment.</p>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-accent" href="#opportunities">Find growth opportunities</a>
+        <a class="btn btn-sd" href="#how">See how it works</a>
+      </div>
+    </div>
+
+    <div class="chat is-idle" id="chat" aria-live="polite">
+      <div class="chat-head">
+        <div class="chat-title">
+          <img src="assets/svg-497e021ea813.svg" alt="">
+          <p class="t-h5">Ask Opus</p>
+          <button class="chat-more" aria-label="More"><img src="assets/svg-2b829833f2fd.svg" alt=""></button>
+        </div>
+        <div class="chips"><span class="chip-ctx">24,000 customers</span><span class="chip-ctx">Last 30 days</span></div>
+      </div>
+      <div class="chat-views">
+        <div class="chat-welcome">
+          <div>
+            <p class="t-h4">Where should we focus?</p>
+            <p class="t-c14">Explore churn risk and find your next best action.</p>
+          </div>
+          <div class="suggests">
+            <button class="suggest" data-q="Who is likely to churn this quarter?"><img src="assets/svg-2e205a8a5f1d.svg" alt="">Who is likely to churn?</button>
+            <button class="suggest" data-q="Why did churn increase this month?" data-main><img src="assets/svg-fb8aff60f455.svg" alt="">Why did churn increase?</button>
+            <button class="suggest" data-q="What should we do first?"><img src="assets/svg-a4df53de1721.svg" alt="">What should we do first?</button>
+          </div>
+        </div>
+        <div class="chat-answer">
+          <div class="q-bubble t-c14">Why did churn increase this month?</div>
+          <div>
+            <div class="a-label t-c12m"><img src="assets/svg-5c99b416dc30.svg" alt="">Opus</div>
+            <p class="a-text t-b16">72% of the increase came from June promotion customers. They skipped onboarding and are 2.1× more likely to&nbsp;cancel.</p>
+          </div>
+          <a class="reco" href="#nba">
+            <div><span class="k">Recommended next step</span><span class="v">Onboarding recovery</span><span class="n">3,240 customers</span></div>
+            <img src="assets/svg-c28ea7a215cb.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="composer">
+        <div class="input" id="chat-input">Ask about your customers…</div>
+        <button class="send" aria-label="Send"><img src="assets/svg-86a394e98792.svg" alt=""></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ PLATFORM (after hero, ref ramp.com product shot) ============ -->
+<section class="platform" id="platform">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="title-group">
+        <p class="t-caps">Platform</p>
+        <h2 class="t-h2">Your whole customer base <br>on one revenue&nbsp;map.</h2>
+      </div>
+      <div class="side">
+        <p class="sub t-b16">One workspace shows who is at risk, what it&nbsp;is&nbsp;worth and the next best action for every&nbsp;segment.</p>
+        <a class="btn btn-primary btn-s" href="#demo" data-demo>Book a demo</a>
+      </div>
+    </div>
+  </div>
+  <div class="fit pf-fit" data-w="1200" data-h="600" data-mw="350" data-mh="600">
+    <div class="stage pf-show" id="pf">
+      <div class="pf-canvas">
+        <img class="pf-bg" src="assets/jpg-a07bd34b6841.jpg" alt="">
+        <div class="pf-win">
+          <div class="pf-bar">
+            <span class="pf-dots"><i></i><i></i><i></i></span>
+            <span class="t-c14 pf-ttl">Revenue map</span>
+            <span class="t-c14 pf-meta"><span data-pfn="24000">24,000</span> customers</span>
+          </div>
+          <div class="pf-body">
+            <aside class="pf-side pfg">
+              <p class="pf-grp t-c14">Workspace</p>
+              <a class="pf-nav on" style="--i:0"><span class="pf-ic"><img class="ink" src="assets/svg-6871b08293f1.svg" alt=""></span><span class="t-c14m">Revenue map</span></a>
+              <a class="pf-nav" style="--i:1"><span class="pf-ic"><img src="assets/svg-739999df910e.svg" alt=""></span><span class="t-c14">Opportunities</span><b class="pf-badge t-c12m">3</b></a>
+              <a class="pf-nav" style="--i:2"><span class="pf-ic"><img src="assets/svg-4c5669d066b2.svg" alt=""></span><span class="t-c14">Segments</span></a>
+              <a class="pf-nav" style="--i:3"><span class="pf-ic"><img src="assets/svg-fa71b87c5a65.svg" alt=""></span><span class="t-c14">Campaigns</span></a>
+              <a class="pf-nav" style="--i:4"><span class="pf-ic"><img src="assets/svg-a6b5f289c6be.svg" alt=""></span><span class="t-c14">Ask Opus</span></a>
+              <p class="pf-grp g2 t-c14">Segments</p>
+              <a class="pf-seg" style="--i:5;--c:var(--save-fill)"><i></i><span class="t-c14">Annual subscribers</span></a>
+              <a class="pf-seg" style="--i:6;--c:var(--grow-fill)"><i></i><span class="t-c14">Power users</span></a>
+              <a class="pf-seg" style="--i:7;--c:var(--reactivate-fill)"><i></i><span class="t-c14">Dormant</span></a>
+              <a class="pf-seg" style="--i:8;--c:var(--deepen-fill)"><i></i><span class="t-c14">New users</span></a>
+              <a class="pf-seg" style="--i:9;--c:var(--grow-fill)"><i></i><span class="t-c14">Loyal advocates</span></a>
+            </aside>
+            <div class="pf-main">
+              <div class="pf-greet">
+                <div class="pf-gtxt">
+                  <p class="t-h4">Good morning, Maya</p>
+                  <p class="t-c14">3 actions need you this&nbsp;week.</p>
+                </div>
+                <div class="pf-goal pfg">
+                  <img src="assets/svg-739999df910e.svg" alt="">
+                  <span class="t-c14m">Recover $61K ARR</span>
+                  <span class="pf-gbar"><i></i></span>
+                  <span class="t-c14 pf-pct"><span data-pfp="64">64</span>%</span>
+                </div>
+              </div>
+              <div class="pf-kpis">
+                <div class="pf-kpi pfg" style="--i:0"><p class="t-c14">ARR at risk</p><p class="t-h3">$<span data-pfk="216">216</span>K</p><p class="t-c14">Up 12% this month</p></div>
+                <div class="pf-kpi pfg" style="--i:1"><p class="t-c14">Recoverable</p><p class="t-h3">$<span data-pfk="61">61</span>K</p><p class="t-c14">Value recap, then pause</p></div>
+                <div class="pf-kpi pfg" style="--i:2"><p class="t-c14">Expansion</p><p class="t-h3">$<span data-pfk="92">92</span>K</p><p class="t-c14 pf-up">+8.4% this month</p></div>
+                <div class="pf-kpi pfg" style="--i:3"><p class="t-c14">Customers</p><p class="t-h3"><span data-pfn="24000">24,000</span></p><p class="t-c14">4 sources connected</p></div>
+              </div>
+              <div class="pf-att pfg">
+                <div class="pf-hd"><p class="t-h5">What needs your attention</p><span class="t-c14">3 items</span></div>
+                <div class="pf-row" style="--i:0">
+                  <span class="pf-tile"><img src="assets/svg-cc28204a851e.svg" alt=""></span>
+                  <div class="pf-tx"><p class="t-b16">Churn risk is up 12% in Annual subscribers</p><p class="t-c14">Usage falls after month nine. A value recap is the cheapest&nbsp;fix.</p></div>
+                  <a class="btn btn-accent btn-s" href="#campaign">Build campaign</a>
+                </div>
+                <div class="pf-row" style="--i:1">
+                  <span class="pf-tile"><img src="assets/svg-24b52f9cbbee.svg" alt="" style="margin-right:1.67px"></span>
+                  <div class="pf-tx"><p class="t-b16">742 power users are ready for Pro</p><p class="t-c14">An upgrade offer could add $92K&nbsp;ARR.</p></div>
+                  <a class="btn btn-secondary btn-s" href="#opportunities">Review segment</a>
+                </div>
+                <div class="pf-row" style="--i:2">
+                  <span class="pf-tile"><img src="assets/svg-ccebfedea0e0.svg" alt=""></span>
+                  <div class="pf-tx"><p class="t-b16">1,091 dormant customers can come back</p><p class="t-c14">Start with a win-back that has no&nbsp;discount.</p></div>
+                  <a class="btn btn-secondary btn-s" href="#offer">See offers</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pf-ticker">
+    <span class="head"><img src="assets/svg-6aeadf02683b.svg" alt=""><span class="t-caps">Live today</span></span>
+    <span class="it"><span class="t-caps">Customers read</span><b data-tick="2413880" data-step="40,180">2,413,880</b></span>
+    <span class="it"><span class="t-caps">Segments updated</span><b data-tick="18240" data-step="0,3">18,240</b></span>
+    <span class="it"><span class="t-caps">Actions sent</span><b data-tick="9612" data-step="1,6">9,612</b></span>
+    <span class="it"><span class="t-caps">Campaigns live</span><b data-tick="1204" data-step="0,1">1,204</b></span>
+    <span class="it"><span class="t-caps">Revenue influenced</span><b>$4.2M</b></span>
+  </div>
+</section>
+
+<!-- ============ INTEGRATIONS ============ -->
+<section class="sec integrations" id="integrations">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="title-group">
+        <p class="t-caps">Integrations</p>
+        <h2 class="t-h2">Connects to the tools <br>you already&nbsp;use.</h2>
+      </div>
+      <p class="sub t-b16 balance">Opus reads your billing, product, CRM <br>and support data. It doesn’t replace any of&nbsp;them.</p>
+    </div>
+    <div class="logo-grid reveal">
+      <div class="tile"><span class="lg"><svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" d="M16.3053 10.675C13.7713 9.73467 12.39 9.01133 12.39 7.8645C12.39 6.895 13.1868 6.342 14.6078 6.342C17.206 6.342 19.8753 7.343 21.7128 8.24483L22.7512 1.83517C21.294 1.1375 18.3132 0 14.1925 0C11.2782 0 8.85383 0.763 7.12133 2.184C5.32 3.6715 4.38317 5.824 4.38317 8.421C4.38317 13.1332 7.26133 15.141 11.9385 16.8432C14.9543 17.9165 15.9577 18.6795 15.9577 19.8567C15.9577 21 14.9777 21.6592 13.2113 21.6592C11.0238 21.6592 7.41883 20.5847 5.05633 19.1987L4.00633 25.6795C6.0375 26.8217 9.7825 28 13.6663 28C16.7475 28 19.3165 27.272 21.049 25.8848C22.9903 24.3623 23.9948 22.1095 23.9948 19.1975C23.9948 14.3815 21.0502 12.3713 16.3018 10.675H16.3053Z" fill="#141412"/></g></svg></span><div class="spacer"></div><p class="t-h5">Stripe</p><p class="t-c14">Billing</p></div>
+      <div class="tile"><span class="lg"><svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" d="M17.8932 27.9755L26.3118 26.1543C26.3118 26.1543 23.2738 5.60583 23.2493 5.46933C23.2283 5.334 23.1163 5.24533 23.0032 5.24533C22.89 5.24533 20.7527 5.08667 20.7527 5.08667C20.7527 5.08667 19.2652 3.60033 19.0738 3.4405C19.0213 3.39733 18.9863 3.374 18.9327 3.35417L17.8663 27.9755H17.8932ZM13.6617 13.1892C13.6617 13.1892 12.7167 12.6945 11.592 12.6945C9.90383 12.6945 9.83733 13.7515 9.83733 14.0257C9.83733 15.463 13.6173 16.0265 13.6173 19.4262C13.6173 22.1037 11.9373 23.8128 9.64367 23.8128C6.89733 23.8128 5.51367 22.1037 5.51367 22.1037L6.26733 19.67C6.26733 19.67 7.71983 20.9137 8.92733 20.9137C9.71483 20.9137 10.0648 20.2778 10.0648 19.8263C10.0648 17.9375 6.9685 17.85 6.9685 14.7408C6.92883 12.131 8.80133 9.58883 12.6 9.58883C14.0665 9.58883 14.7875 10.01 14.7875 10.01L13.685 13.1775L13.6617 13.1892ZM13.0317 0.968333C13.1903 0.968333 13.3478 1.01267 13.5042 1.12583C12.3562 1.66833 11.0962 3.038 10.5782 5.78317C9.81283 6.03167 9.06967 6.25567 8.37433 6.4575C8.97983 4.375 10.4428 0.98 13.0317 0.98V0.968333ZM14.4725 4.40883V4.56633C13.5928 4.837 12.6257 5.131 11.6795 5.425C12.2232 3.35183 13.2347 2.33917 14.112 1.95883C14.3372 2.54333 14.4725 3.33083 14.4725 4.40883ZM15.1013 1.8025C15.911 1.88883 16.4325 2.814 16.7685 3.85C16.3613 3.983 15.911 4.1195 15.4175 4.277V3.983C15.4175 3.10567 15.3055 2.3835 15.1013 1.80017V1.8025ZM18.592 3.30633C18.5687 3.30633 18.522 3.33083 18.501 3.33083C18.48 3.33083 18.1638 3.41833 17.668 3.57583C17.1745 2.13733 16.296 0.810833 14.742 0.810833H14.6078C14.1575 0.243833 13.6138 0 13.1425 0C9.51883 0 7.7875 4.52317 7.245 6.82033C5.852 7.24617 4.83817 7.56233 4.725 7.60667C3.9375 7.85517 3.91533 7.87733 3.82433 8.62167C3.73683 9.16067 1.68933 25.0285 1.68933 25.0285L17.5105 28L18.592 3.30633Z" fill="#141412"/></g></svg></span><div class="spacer"></div><p class="t-h5">Shopify</p><p class="t-c14">Commerce</p></div>
+      <div class="tile"><span class="lg"><svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" d="M8.12817 11.662H11.69C10.7998 11.1055 10.4673 10.3262 10.0205 8.88067L8.6835 3.927C8.07217 1.701 7.57167 0.642833 5.12167 0.642833H0.00466667V1.97867H0.729167C2.2295 1.97867 2.39867 2.53517 2.8455 4.20467L4.01333 8.547C4.62467 10.6633 5.57317 11.662 8.13167 11.662H8.12817ZM16.3648 11.662H19.9267C22.4863 11.662 23.3753 10.6587 23.9913 8.547L25.1592 4.20467C25.6048 2.53517 25.8242 1.97867 27.2755 1.97867H28V0.642833H22.9367C20.433 0.642833 19.9313 1.64617 19.3748 3.927L18.039 8.88067C17.591 10.381 17.2538 11.1055 16.3648 11.662ZM11.69 16.338H16.3648V11.662H11.69V16.338ZM0 27.3572H5.12167C7.57167 27.3572 8.07217 26.299 8.6835 24.073L10.0205 19.1193C10.4673 17.6738 10.7998 16.8945 11.69 16.338H8.12817C5.5685 16.338 4.62 17.3413 4.00867 19.453L2.84083 23.7953C2.394 25.4648 2.2295 26.0202 0.7245 26.0202H0V27.3572ZM22.925 27.3572H27.9918V26.0202H27.2662C25.8207 26.0202 25.5967 25.4648 25.1498 23.7953L23.982 19.453C23.3707 17.3367 22.4817 16.338 19.9185 16.338H16.3648C17.2538 16.8945 17.5793 17.619 18.0262 19.1193L19.362 24.073C19.9185 26.3538 20.4202 27.3572 22.925 27.3572Z" fill="#141412"/></g></svg></span><div class="spacer"></div><p class="t-h5">Mixpanel</p><p class="t-c14">Product</p></div>
+      <div class="tile"><span class="lg"><svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" d="M0.996334 6.41667C0.91475 6.33488 0.810717 6.27915 0.697423 6.25656C0.58413 6.23396 0.466679 6.24552 0.35996 6.28975C0.253242 6.33399 0.162061 6.40892 0.0979774 6.50504C0.0338941 6.60116 -0.000205759 6.71414 9.34093e-07 6.82967V9.84667C3.37396e-05 10.0011 0.0612872 10.1492 0.170334 10.2585L5.83333 15.9215L6.00483 16.0918L11.4963 21.5833L11.6667 21.7548V21.6977C11.7425 21.7327 11.823 21.7548 11.9082 21.7548H14.9252C15.0406 21.7548 15.1534 21.7205 15.2494 21.6564C15.3453 21.5922 15.42 21.501 15.4641 21.3943C15.5082 21.2877 15.5197 21.1703 15.4971 21.0571C15.4744 20.9439 15.4187 20.84 15.337 20.7585L0.996334 6.41667ZM6.82967 6.41667C6.76851 6.35371 6.6936 6.30578 6.61081 6.27663C6.52803 6.24748 6.43961 6.23791 6.3525 6.24867C6.27011 6.25861 6.19066 6.28551 6.11918 6.32767C6.04769 6.36984 5.98572 6.42636 5.93717 6.49367C5.86833 6.59208 5.83202 6.70957 5.83333 6.82967V9.84667C5.83368 10.0012 5.89536 10.1494 6.00483 10.2585L16.5048 20.7585C16.5865 20.8399 16.6904 20.8953 16.8035 20.9176C16.9166 20.94 17.0338 20.9283 17.1403 20.8842C17.2467 20.84 17.3377 20.7652 17.4018 20.6693C17.4658 20.5735 17.5 20.4608 17.5 20.3455V17.3297C17.5001 17.253 17.4852 17.1771 17.4559 17.1062C17.4267 17.0354 17.3838 16.9709 17.3297 16.9167L6.82967 6.41667ZM12.663 6.41667C12.5814 6.33488 12.4774 6.27915 12.3641 6.25656C12.2508 6.23396 12.1333 6.24552 12.0266 6.28975C11.9199 6.33399 11.8287 6.40892 11.7646 6.50504C11.7006 6.60116 11.6665 6.71414 11.6667 6.82967V9.84667C11.667 10.0012 11.7287 10.1494 11.8382 10.2585L16.5048 14.9252C16.5865 15.0066 16.6904 15.0619 16.8035 15.0843C16.9166 15.1067 17.0338 15.095 17.1403 15.0508C17.2467 15.0066 17.3377 14.9319 17.4018 14.836C17.4658 14.7401 17.5 14.6275 17.5 14.5122V11.4963C17.5001 11.4197 17.4852 11.3437 17.4559 11.2729C17.4267 11.202 17.3838 11.1376 17.3297 11.0833L12.663 6.41667ZM27.4178 19.8508C26.432 19.722 25.5165 19.2708 24.8138 18.5675L19.3212 13.076C19.2396 12.9942 19.1355 12.9385 19.0223 12.9159C18.909 12.8933 18.7915 12.9048 18.6848 12.9491C18.5781 12.9933 18.4869 13.0683 18.4228 13.1644C18.3587 13.2605 18.3246 13.3735 18.3248 13.489V21.1715C18.3248 21.3262 18.3863 21.4746 18.4957 21.584C18.6051 21.6934 18.7535 21.7548 18.9082 21.7548H27.4167C27.5714 21.7548 27.7198 21.6934 27.8291 21.584C27.9385 21.4746 28 21.3262 28 21.1715V20.4715C28 20.1495 27.7375 19.8917 27.4178 19.8508ZM21.1248 19.8882C20.8773 19.8882 20.6399 19.7898 20.4649 19.6148C20.2898 19.4398 20.1915 19.2024 20.1915 18.9548C20.1915 18.7073 20.2898 18.4699 20.4649 18.2949C20.6399 18.1198 20.8773 18.0215 21.1248 18.0215C21.3724 18.0215 21.6098 18.1198 21.7848 18.2949C21.9598 18.4699 22.0582 18.7073 22.0582 18.9548C22.0582 19.2024 21.9598 19.4398 21.7848 19.6148C21.6098 19.7898 21.3724 19.8882 21.1248 19.8882ZM0.996334 18.0833C0.91475 18.0015 0.810717 17.9458 0.697423 17.9232C0.58413 17.9006 0.466679 17.9122 0.35996 17.9564C0.253242 18.0007 0.162061 18.0756 0.0979774 18.1717C0.0338941 18.2678 -0.000205759 18.3808 9.34093e-07 18.4963V21.1715C9.34093e-07 21.3262 0.0614591 21.4746 0.170855 21.584C0.280252 21.6934 0.428625 21.7548 0.583334 21.7548H3.2585C3.5175 21.7548 3.7135 21.5973 3.7975 21.3943C3.8427 21.2879 3.85474 21.1702 3.83206 21.0568C3.80937 20.9434 3.75301 20.8394 3.67033 20.7585L0.996334 18.0845V18.0833ZM0.996334 12.25C0.91482 12.1683 0.810894 12.1126 0.69771 12.0899C0.584525 12.0673 0.467171 12.0788 0.3605 12.1229C0.253829 12.167 0.162637 12.2417 0.0984644 12.3376C0.0342923 12.4336 2.54515e-05 12.5464 9.34093e-07 12.6618V15.6788C3.37396e-05 15.8332 0.0612872 15.9813 0.170334 16.0907L5.663 21.5833L5.83333 21.7548H9.09184C9.20726 21.7548 9.32008 21.7205 9.41602 21.6564C9.51197 21.5922 9.58671 21.501 9.63081 21.3943C9.6749 21.2877 9.68635 21.1703 9.66372 21.0571C9.64109 20.9439 9.58539 20.84 9.50367 20.7585L0.996334 12.25Z" fill="#141412"/></g></svg></span><div class="spacer"></div><p class="t-h5">PostHog</p><p class="t-c14">Product</p></div>
+      <div class="tile"><span class="lg"><svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" d="M21.1913 9.25167V5.93133C21.6308 5.72588 22.0029 5.39999 22.2645 4.99152C22.5262 4.58305 22.6666 4.10874 22.6695 3.62367V3.5455C22.6677 2.8674 22.3975 2.21759 21.9182 1.73799C21.4388 1.2584 20.7891 0.987988 20.111 0.985833H20.0328C19.3549 0.987987 18.7054 1.25823 18.2261 1.73758C17.7467 2.21693 17.4765 2.86644 17.4743 3.54433V3.6225C17.4765 4.10476 17.6147 4.57663 17.8731 4.98383C18.1315 5.39103 18.4996 5.71703 18.935 5.92433L18.9502 5.93133V9.25867C17.6807 9.45263 16.4854 9.98003 15.4863 10.787L15.5003 10.7753L6.36767 3.6645C6.54154 3.0131 6.4841 2.32156 6.20512 1.70778C5.92614 1.094 5.44291 0.595981 4.83781 0.298642C4.23272 0.00130282 3.54322 -0.0769505 2.88688 0.0772241C2.23053 0.231399 1.64799 0.608455 1.23856 1.14411C0.829131 1.67976 0.61817 2.34084 0.641646 3.01464C0.665122 3.68843 0.921581 4.33323 1.3673 4.83909C1.81301 5.34494 2.42039 5.68054 3.08587 5.78866C3.75135 5.89678 4.43373 5.77073 5.01667 5.432L5.00267 5.439L13.9825 12.4285C13.1887 13.6187 12.7671 15.0182 12.7715 16.4488C12.7715 18.0157 13.2673 19.4682 14.1097 20.657L14.0945 20.6337L11.3622 23.3672C11.1434 23.2966 10.9153 23.2592 10.6855 23.2563H10.6832C10.2141 23.2563 9.75549 23.3954 9.36545 23.6561C8.9754 23.9167 8.6714 24.2871 8.49188 24.7205C8.31236 25.1539 8.26539 25.6308 8.35691 26.0909C8.44843 26.551 8.67432 26.9736 9.00603 27.3053C9.33773 27.637 9.76036 27.8629 10.2204 27.9544C10.6805 28.0459 11.1574 27.999 11.5908 27.8195C12.0242 27.6399 12.3947 27.3359 12.6553 26.9459C12.9159 26.5558 13.055 26.0973 13.055 25.6282C13.0518 25.3922 13.0125 25.1581 12.9383 24.934L12.9442 24.9503L15.6473 22.2472C16.5284 22.9195 17.5512 23.382 18.6379 23.5995C19.7246 23.817 20.8466 23.7839 21.9186 23.5025C22.9905 23.2212 23.9842 22.6991 24.8241 21.9759C25.6639 21.2528 26.3277 20.3476 26.7651 19.3293C27.2024 18.311 27.4018 17.2063 27.348 16.0993C27.2942 14.9924 26.9887 13.9123 26.4546 12.9412C25.9206 11.97 25.1721 11.1335 24.2661 10.4952C23.3602 9.85687 22.3205 9.43357 21.2263 9.2575L21.1843 9.25167H21.1913ZM20.0667 20.1927C19.3274 20.1906 18.6053 19.9695 17.9916 19.5573C17.378 19.1451 16.9002 18.5603 16.6187 17.8767C16.3371 17.1931 16.2645 16.4415 16.4099 15.7166C16.5553 14.9918 16.9123 14.3263 17.4356 13.8042C17.959 13.2821 18.6254 12.9269 19.3506 12.7833C20.0758 12.6397 20.8273 12.7142 21.5101 12.9974C22.193 13.2806 22.7766 13.7599 23.1873 14.3746C23.598 14.9893 23.8173 15.7119 23.8175 16.4512V16.4535C23.8177 16.9449 23.721 17.4315 23.533 17.8855C23.345 18.3395 23.0694 18.752 22.722 19.0995C22.3745 19.4469 21.962 19.7225 21.508 19.9105C21.054 20.0985 20.5674 20.1952 20.076 20.195L20.0667 20.1927Z" fill="#141412"/></g></svg></span><div class="spacer"></div><p class="t-h5">HubSpot</p><p class="t-c14">CRM</p></div>
+      <div class="tile"><span class="lg"><svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" d="M11.6737 6.3175C12.1313 5.83564 12.6824 5.45204 13.2931 5.19008C13.9039 4.92813 14.5616 4.79331 15.2262 4.79383C17.0462 4.79383 18.6725 5.84383 19.5312 7.36633C20.2662 7.01633 21.1062 6.84133 21.9812 6.84133C25.3062 6.84133 28 9.57133 28 12.9313C28 16.2913 25.305 19.0213 21.9613 19.0213C21.5588 19.0213 21.1563 18.97 20.7713 18.9C20.3936 19.5904 19.8365 20.1662 19.159 20.5666C18.4814 20.967 17.7084 21.1771 16.9213 21.175C16.2213 21.175 15.5738 21 14.9963 20.7375C14.6095 21.6467 13.9636 22.4219 13.1391 22.9665C12.3146 23.5111 11.3481 23.801 10.36 23.8C9.33 23.8027 8.32411 23.4885 7.47883 22.8999C6.63355 22.3113 5.98982 21.477 5.635 20.51C5.32 20.5823 5.005 20.5987 4.6725 20.5987C2.10117 20.5987 0 18.4987 0 15.8737C0 14.1237 0.946167 12.6012 2.345 11.7787C2.0475 11.1137 1.89 10.3787 1.89 9.625C1.89 6.615 4.34 4.2 7.315 4.2C9.1 4.2 10.64 5.0225 11.655 6.3" fill="#141412"/></g></svg></span><div class="spacer"></div><p class="t-h5">Salesforce</p><p class="t-c14">CRM</p></div>
+      <div class="tile"><span class="lg"><svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" d="M24.5 0H3.5C1.56683 0 0 1.56683 0 3.5V24.5C0 26.4343 1.56683 28 3.5 28H24.5C26.4343 28 28 26.4343 28 24.5V3.5C28 1.56683 26.4343 0 24.5 0ZM17.7322 5.13217C17.7322 4.61883 18.1522 4.19883 18.6678 4.19883C19.1812 4.19883 19.6012 4.61883 19.6012 5.13217V17.6015C19.6012 18.1172 19.1812 18.536 18.6678 18.536C18.151 18.536 17.7322 18.1172 17.7322 17.6015V5.13217ZM13.0667 4.65967C13.0667 4.14633 13.4832 3.7275 14 3.7275C14.5168 3.7275 14.9333 4.14633 14.9333 4.65967V18.1953C14.9333 18.7087 14.5168 19.1287 14 19.1287C13.4832 19.1287 13.0667 18.7087 13.0667 18.1953V4.65967ZM8.4 5.13217C8.4 4.61883 8.81883 4.19883 9.33217 4.19883C9.849 4.19883 10.2678 4.61883 10.2678 5.13217V17.6015C10.2678 18.1172 9.84783 18.536 9.33217 18.536C8.81883 18.536 8.4 18.1172 8.4 17.6015V5.13217ZM3.73217 7C3.73217 6.48433 4.15217 6.06667 4.66783 6.06667C5.18117 6.06667 5.6 6.48433 5.6 7V15.3942C5.6 15.9087 5.18117 16.3275 4.66783 16.3275C4.151 16.3275 3.73217 15.9075 3.73217 15.3942V7ZM23.94 21.2357C23.7965 21.3582 20.3397 24.2608 14 24.2608C7.6615 24.2608 4.2035 21.3605 4.05883 21.2357C3.668 20.8997 3.62133 20.3117 3.9585 19.9197C4.291 19.53 4.88017 19.4822 5.271 19.8147C5.32583 19.8625 8.41283 22.3942 13.9988 22.3942C19.6548 22.3942 22.6975 19.8438 22.7243 19.8193C23.114 19.4822 23.7032 19.5277 24.0403 19.9197C24.3775 20.3117 24.332 20.8997 23.94 21.2357ZM24.2678 15.3942C24.2678 15.9087 23.8478 16.3275 23.3333 16.3275C22.8188 16.3275 22.3988 15.9075 22.3988 15.3942V7C22.3988 6.48433 22.82 6.06667 23.3333 6.06667C23.8478 6.06667 24.2678 6.48317 24.2678 7V15.3942Z" fill="#141412"/></g></svg></span><div class="spacer"></div><p class="t-h5">Intercom</p><p class="t-c14">Support</p></div>
+      <div class="tile"><span class="lg"><svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" d="M15.0663 3.388V19.005L28 3.38917L15.0663 3.388ZM0 3.39033C0 6.96033 2.89683 9.85833 6.46683 9.85833C10.0368 9.85833 12.9325 6.96033 12.9337 3.39033H0ZM12.9337 8.9985L0 24.612H12.9337V8.9985ZM21.532 18.1452C17.9585 18.1452 15.0663 21.0385 15.0663 24.612H28C28 21.042 25.1067 18.1452 21.5332 18.1452H21.532Z" fill="#141412"/></g></svg></span><div class="spacer"></div><p class="t-h5">Zendesk</p><p class="t-c14">Support</p></div>
+      <div class="tile"><span class="lg"><svg aria-hidden="true" focusable="false" width="28" height="28.0005" viewBox="0 0 28 28.0005" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" d="M13.1448 1.91668e-05C7.92283 -0.0174808 -2.12333 11.9537 1.62983 15.1247L2.5515 15.9052C2.30274 16.5722 2.2148 17.2885 2.29483 17.9959C2.39283 18.9759 2.89917 19.9139 3.71817 20.6395C4.49517 21.3279 5.51717 21.7642 6.50883 21.7642C8.14917 25.5442 11.8988 27.8635 16.2925 27.9942C21.0058 28.1342 24.9643 25.9222 26.6222 21.9485C26.7307 21.6685 27.1915 20.4132 27.1915 19.3037C27.1915 18.1884 26.5615 17.7264 26.159 17.7264C26.1473 17.6832 26.068 17.3927 25.9583 17.0427C25.8498 16.6927 25.7367 16.4477 25.7367 16.4477C26.1742 15.7909 26.1823 15.2052 26.124 14.8727C26.0622 14.4609 25.8907 14.1109 25.5453 13.748C25.2 13.3852 24.493 13.013 23.5002 12.7354L22.9798 12.5907C22.9775 12.5685 22.9518 11.3622 22.9297 10.8442C22.9133 10.4709 22.8807 9.88519 22.6998 9.31002C22.4828 8.53069 22.1072 7.84819 21.637 7.41185C22.9343 6.06785 23.744 4.58619 23.7417 3.31569C23.7382 0.871519 20.7363 0.131853 17.038 1.66369L16.254 1.99619C15.7755 1.52619 15.2964 1.0568 14.8167 0.588019C14.3547 0.185519 13.7865 0.0023525 13.1448 1.91668e-05ZM13.23 1.01852C13.4237 1.01852 13.6057 1.04069 13.7725 1.08619C14.119 1.18419 15.2658 2.51419 15.2658 2.51419C15.2658 2.51419 13.1355 3.69602 11.1592 5.34452C8.49917 7.39435 6.48667 10.374 5.28267 13.6069C4.3365 13.7912 3.50233 14.3279 2.9925 15.0687C2.688 14.8144 2.11983 14.322 2.0195 14.1307C1.20517 12.5837 2.90733 9.57835 4.09733 7.88085C6.80633 4.01335 10.9317 1.01152 13.23 1.01852ZM17.0637 4.83702C17.1103 4.83469 17.1337 4.89535 17.0963 4.92335C16.9295 5.05169 16.7475 5.22669 16.6145 5.40635C16.6094 5.41321 16.6062 5.42134 16.6054 5.42987C16.6045 5.43841 16.6061 5.447 16.6098 5.45471C16.6136 5.46242 16.6193 5.46896 16.6266 5.4736C16.6338 5.47824 16.6421 5.48081 16.6507 5.48102C17.4195 5.48569 18.5022 5.75519 19.208 6.15069C19.2558 6.17752 19.222 6.27085 19.1683 6.25802C18.1008 6.01302 16.352 5.82752 14.5367 6.26969C12.915 6.66635 11.6783 7.27652 10.7753 7.93335C10.7287 7.96602 10.675 7.90652 10.7112 7.86335C11.7565 6.65585 13.0433 5.60585 14.196 5.01669C14.2357 4.99569 14.2777 5.03885 14.2567 5.07735C14.1645 5.24419 13.9883 5.59885 13.9323 5.86835C13.9242 5.90919 13.9697 5.94185 14.0047 5.91735C14.7222 5.42735 15.9693 4.90469 17.0637 4.83702ZM20.5905 8.57619L20.6558 8.57735C20.8453 8.58482 21.0292 8.6437 21.1878 8.74769C21.8108 9.16185 21.8995 10.1664 21.9322 10.9002C21.9497 11.3202 22.001 12.334 22.0185 12.6245C22.0582 13.2907 22.2332 13.384 22.5867 13.5007C22.785 13.5672 22.9717 13.615 23.2435 13.692C24.0672 13.923 24.556 14.1587 24.8652 14.4597C25.0483 14.6487 25.1335 14.8482 25.1603 15.0395C25.2572 15.7489 24.6097 16.6262 22.8947 17.4207C21.0198 18.291 18.7448 18.5115 17.1733 18.3365L16.6238 18.2747C15.3662 18.1055 14.6487 19.7295 15.4035 20.8425C15.89 21.56 17.2142 22.0267 18.5395 22.0267C21.5775 22.0267 23.912 20.7305 24.7812 19.6094C24.8062 19.5776 24.8296 19.5445 24.8512 19.5102C24.8932 19.446 24.8582 19.411 24.8045 19.4472C24.0952 19.9325 20.9428 21.861 17.5712 21.28C17.5712 21.28 17.1617 21.2135 16.7872 21.0677C16.4897 20.951 15.8678 20.6664 15.792 20.0282C18.5138 20.8682 20.2265 20.0737 20.2265 20.0737C20.2424 20.0665 20.2556 20.0546 20.2644 20.0395C20.2732 20.0245 20.2771 20.007 20.2755 19.9897C20.2745 19.9794 20.2714 19.9694 20.2665 19.9603C20.2616 19.9512 20.255 19.9432 20.2469 19.9367C20.2389 19.9302 20.2297 19.9253 20.2198 19.9224C20.2098 19.9195 20.1994 19.9186 20.1892 19.9197C20.1892 19.9197 17.9597 20.2499 15.8515 19.4787C16.0813 18.732 16.6915 19.0027 17.6132 19.0762C19.0472 19.1612 20.4853 19.0058 21.868 18.6165C22.8223 18.3435 24.0753 17.8034 25.0495 17.0345C25.3773 17.7555 25.4928 18.55 25.4928 18.55C25.4928 18.55 25.7483 18.5034 25.9595 18.6352C26.1613 18.7589 26.3083 19.0155 26.208 19.6794C26.0027 20.9195 25.4753 21.9264 24.5898 22.8527C24.0362 23.4513 23.3774 23.9432 22.6462 24.304C22.2495 24.514 21.8248 24.6937 21.378 24.8407C18.0378 25.9315 14.6183 24.7322 13.5158 22.1574C13.4265 21.9604 13.3528 21.7568 13.2953 21.5484C12.8252 19.8509 13.2253 17.815 14.4713 16.5329C14.5472 16.4512 14.6253 16.3544 14.6253 16.2342C14.6253 16.1327 14.5612 16.0254 14.5063 15.9507C14.07 15.3172 12.5592 14.2404 12.8625 12.1544C13.0807 10.6564 14.3908 9.60052 15.6123 9.66352C15.7162 9.66819 15.8188 9.67519 15.9227 9.68102C16.4512 9.71252 16.9143 9.78019 17.3495 9.79769C18.0787 9.83035 18.7343 9.72419 19.5113 9.07669C19.7738 8.85852 19.9838 8.66835 20.3397 8.60885C20.3723 8.60302 20.447 8.57619 20.5905 8.57619Z" fill-rule="evenodd" clip-rule="evenodd" fill="#141412"/></g></svg></span><div class="spacer"></div><p class="t-h5">Mailchimp</p><p class="t-c14">Lifecycle</p></div>
+      <div class="tile"><span class="lg"><svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" d="M8.0675 4.70167C5.7715 4.70167 3.77067 6.195 2.38467 8.3335C0.821333 10.7427 0 13.8635 0 16.8572C0 17.6808 0.0816667 18.4543 0.245 19.159C0.325192 19.5001 0.428486 19.8353 0.554167 20.1623C0.674525 20.4694 0.819265 20.7662 0.987 21.0502C1.799 22.4023 3.108 23.2983 5.17883 23.2983C6.92533 23.2983 8.25067 22.5155 9.80467 20.447C10.6913 19.2663 11.1393 18.55 12.9115 15.407L13.7935 13.8448L14.0105 13.4657C14.0817 13.5823 14.1517 13.6943 14.224 13.8157L16.7347 18.0098C17.5793 19.4215 18.6772 20.9918 19.6163 21.8762C20.8367 23.0277 21.9403 23.2995 23.1863 23.2995C24.4405 23.2995 25.375 22.8853 26.0505 22.316C26.4277 21.994 26.7472 21.6101 26.9955 21.1808C27.6278 20.0853 28 18.6993 28 16.8117C28 13.6383 27.2055 10.5618 25.5687 8.12C24.073 5.88933 22.1188 4.70167 20.0667 4.70167C18.8452 4.70167 17.6307 5.2465 16.5048 6.22767C15.7442 6.89267 15.0383 7.73267 14.3815 8.61933C13.5765 7.5985 12.824 6.8145 12.0972 6.22067C10.7182 5.09367 9.39633 4.7005 8.0675 4.7005V4.70167ZM19.9208 7.09683C21.259 7.09683 22.4735 7.98117 23.4115 9.429C24.7322 11.4683 25.333 14.3232 25.333 16.8957C25.333 18.7017 24.9037 20.279 23.1875 20.279C22.5108 20.279 21.9893 20.0107 21.2462 19.1077C20.6675 18.4065 19.6793 16.9167 17.9422 14.0233L17.2223 12.824C16.7545 12.0414 16.2662 11.2711 15.7582 10.514C15.8398 10.3868 15.9227 10.2527 16.0043 10.1325C17.311 8.18767 18.4742 7.09683 19.9208 7.09683ZM8.01967 7.742C9.4955 7.742 10.4207 8.66483 11.1405 9.429C11.4987 9.8105 12.0003 10.4452 12.5802 11.2712L11.3902 13.0982C10.507 14.455 9.1945 16.618 8.08033 18.1592C6.69083 20.083 5.96867 20.279 5.18 20.279C4.56867 20.279 3.969 20.0025 3.5665 19.3527C3.25967 18.8557 3.02517 18.0343 3.02517 16.9657C3.02517 14.3745 3.76017 11.6748 4.96183 9.863C5.4915 9.0615 6.0865 8.43267 6.75033 8.0745C7.13874 7.85866 7.57532 7.7443 8.01967 7.742Z" fill="#141412"/></g></svg></span><div class="spacer"></div><p class="t-h5">Meta</p><p class="t-c14">Ads</p></div>
+      <div class="tile"><span class="lg"><svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" d="M14.56 12.74V16.5667H23.7067C23.4267 18.7133 22.7115 20.2848 21.6218 21.3885C20.2837 22.7267 18.2 24.1885 14.56 24.1885C8.9285 24.1885 4.52667 19.6467 4.52667 14.0152C4.52667 8.38367 8.9285 3.84183 14.56 3.84183C17.5933 3.84183 19.8182 5.04 21.4515 6.58L24.143 3.8885C21.8715 1.68 18.8218 0 14.56 0C6.84483 0 0.358167 6.28483 0.358167 14C0.358167 21.7152 6.84483 28 14.56 28C18.7285 28 21.8715 26.6315 24.3285 24.08C26.8485 21.56 27.6418 17.9982 27.6418 15.1352C27.6418 14.2485 27.58 13.4237 27.44 12.74H14.56Z" fill="#141412"/></g></svg></span><div class="spacer"></div><p class="t-h5">Google</p><p class="t-c14">Ads</p></div>
+      <div class="tile tile-more"><p class="t-n40">+9</p><div class="spacer"></div><p class="t-c14 balance">Amplitude, Klaviyo, Braze and&nbsp;more</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ZONE: Stage_Signals + Stage_Ask ============ -->
+<section class="zone" id="problem">
+  <div class="zone-long" aria-hidden="true"></div>
+  <div class="zone-tint"></div>
+
+  <div class="signals" id="signals">
+    <div class="signals-sticky">
+      <div class="sig-mhead"><p class="t-caps">The problem</p><h2 class="t-h2">Your customer data knows what&nbsp;to&nbsp;do.</h2></div>
+      <div class="sig-viewport">
+      <div class="stage" data-step="1">
+        <p class="sig-label t-caps">The problem</p>
+        <h2 class="sig-title t-h2">Your customer data knows what&nbsp;to&nbsp;do.</h2>
+        <p class="sig-right t-caps">Every tool <br>One answer</p>
+        <div class="sig-progress" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+
+        <!-- Card 1: Stripe -->
+        <div class="sig-card glass glass-light" data-card="1">
+          <p class="cap t-caps">Billing · Stripe</p>
+          <img class="brand" src="assets/svg-75373b9be1b1.svg" alt="">
+          <div class="viz">
+            <p class="vlabel t-c12m" style="left:0;top:0">MRR $<span data-c="412">412</span>k</p>
+            <div class="line-wrap"><img src="assets/svg-f8fe07ebf870.svg" alt=""></div>
+            <img class="glow" src="assets/svg-cf5689cd5675.svg" alt="" style="left:262px;top:26px;width:44px;height:44px"><span class="ping" style="left:284px;top:48px"></span>
+          </div>
+          <p class="ttl t-h3 balance">Who&nbsp;pays and&nbsp;who&nbsp;cancels</p>
+          <p class="desc t-c14">MRR, upgrades and churn&nbsp;dates.</p>
+        </div>
+
+        <!-- Card 2: Mixpanel -->
+        <div class="sig-card glass glass-dark" data-card="2">
+          <p class="cap t-caps">Product · Mixpanel</p>
+          <img class="brand" src="assets/svg-f09be14afaa1.svg" alt="">
+          <div class="viz">
+            <img class="tk-a" src="assets/svg-207c598c980c.svg" alt="" style="--i:1;left:48.79px;top:92.17px;width:6px;height:6px">
+            <img class="tk-a" src="assets/svg-207c598c980c.svg" alt="" style="--i:2;left:57.29px;top:74.6px;width:6px;height:6px">
+            <img class="tk-a" src="assets/svg-207c598c980c.svg" alt="" style="--i:3;left:69.17px;top:59.12px;width:6px;height:6px">
+            <img class="tk-a" src="assets/svg-207c598c980c.svg" alt="" style="--i:4;left:83.94px;top:46.36px;width:6px;height:6px">
+            <img class="tk-a" src="assets/svg-207c598c980c.svg" alt="" style="--i:5;left:100.98px;top:36.85px;width:6px;height:6px">
+            <img class="tk-a" src="assets/svg-207c598c980c.svg" alt="" style="--i:6;left:119.59px;top:30.98px;width:6px;height:6px">
+            <img class="tk-a" src="assets/svg-207c598c980c.svg" alt="" style="--i:7;left:139px;top:29px;width:6px;height:6px">
+            <img class="tk-a" src="assets/svg-207c598c980c.svg" alt="" style="--i:8;left:158.41px;top:30.98px;width:6px;height:6px">
+            <img class="tk-a" src="assets/svg-d3fe1451d0e2.svg" alt="" style="--i:9;left:178.02px;top:37.85px;width:4px;height:4px">
+            <img class="tk-a" src="assets/svg-d3fe1451d0e2.svg" alt="" style="--i:10;left:195.06px;top:47.36px;width:4px;height:4px">
+            <img class="tk-a" src="assets/svg-d3fe1451d0e2.svg" alt="" style="--i:11;left:209.83px;top:60.12px;width:4px;height:4px">
+            <img class="tk-a" src="assets/svg-d3fe1451d0e2.svg" alt="" style="--i:12;left:221.71px;top:75.6px;width:4px;height:4px">
+            <img class="tk-a" src="assets/svg-d3fe1451d0e2.svg" alt="" style="--i:13;left:230.21px;top:93.17px;width:4px;height:4px">
+            <img class="glow" src="assets/svg-0a32bb7f21cd.svg" alt="" style="left:139.41px;top:11.98px;width:44px;height:44px"><span class="ping" style="left:161.41px;top:33.98px"></span>
+            <p class="t-n40 c-w" style="left:82px;top:70px;width:120px;text-align:center"><span data-c="61">61</span>%</p>
+          </div>
+          <p class="ttl t-h3">Who actually uses&nbsp;it</p>
+          <p class="desc t-c14">Logins, features and&nbsp;activation.</p>
+        </div>
+
+        <!-- Card 3: HubSpot -->
+        <div class="sig-card glass glass-dark" data-card="3">
+          <p class="cap t-caps">CRM · HubSpot</p>
+          <img class="brand" src="assets/svg-f328cf369ad6.svg" alt="">
+          <div class="viz">
+            <p class="bar-l t-c12" style="left:0;top:0">Trial</p><i class="track" style="top:7px"></i><i class="fill" style="--i:1;top:7px;width:162px"></i>
+            <p class="bar-l t-c12" style="left:0;top:28px">Active</p><i class="track" style="top:35px"></i><i class="fill" style="--i:2;top:35px;width:126px"></i>
+            <p class="bar-l t-c12" style="left:0;top:56px">Renewal</p><i class="track" style="top:63px"></i><i class="fill acid" style="--i:3;top:63px;width:72px"></i>
+            <p class="bar-l t-c12" style="left:0;top:84px">Expansion</p><i class="track" style="top:91px"></i><i class="fill" style="--i:4;top:91px;width:36px"></i>
+          </div>
+          <p class="ttl t-h3">Who the customer&nbsp;is</p>
+          <p class="desc t-c14">Company, owner and lifecycle&nbsp;stage.</p>
+        </div>
+
+        <!-- Card 4: Intercom -->
+        <div class="sig-card glass glass-dark" data-card="4">
+          <p class="cap t-caps">Support · Intercom</p>
+          <img class="brand" src="assets/svg-f8b849ba4c5c.svg" alt="">
+          <div class="viz">
+            <p class="vlabel t-c12m" style="left:0;top:0">Tickets +<span data-c="18">18</span>%</p>
+            <i class="vbar" style="--i:1;left:4px;top:80px;height:30px"></i>
+            <i class="vbar" style="--i:2;left:32.4px;top:75px;height:35px"></i>
+            <i class="vbar" style="--i:3;left:60.8px;top:78px;height:32px"></i>
+            <i class="vbar" style="--i:4;left:89.2px;top:65px;height:45px"></i>
+            <i class="vbar" style="--i:5;left:117.6px;top:60px;height:50px"></i>
+            <i class="vbar" style="--i:6;left:146px;top:62px;height:48px"></i>
+            <i class="vbar" style="--i:7;left:174.4px;top:48px;height:62px"></i>
+            <i class="vbar hi" style="--i:8;left:202.8px;top:40px;height:70px"></i>
+            <i class="vbar hi" style="--i:9;left:231.2px;top:44px;height:66px"></i>
+            <i class="vbar hi" style="--i:10;left:259.6px;top:28px;height:82px"></i>
+          </div>
+          <p class="ttl t-h3">What they struggle&nbsp;with</p>
+          <p class="desc t-c14">Tickets, cancellation reasons and&nbsp;tone.</p>
+        </div>
+
+        <!-- Card 5: one commercial picture -->
+        <div class="sig-card glass glass-light" data-card="5">
+          <p class="cap t-caps">One commercial picture</p>
+          <i class="div seq" style="--i:1;top:67px"></i>
+          <p class="row-k t-c12 seq" style="--i:2;top:81px">Who</p>
+          <p class="row-v t-h5 c-w seq" style="--i:3;top:101px">1,284 annual subscribers</p>
+          <i class="div seq" style="--i:4;top:155px"></i>
+          <p class="row-k t-c12 seq" style="--i:5;top:169px">Why</p>
+          <p class="row-v t-h5 c-w seq" style="--i:6;top:189px">Usage falls after month&nbsp;nine</p>
+          <i class="div seq" style="--i:7;top:243px"></i>
+          <p class="row-k t-c12 seq" style="--i:8;top:257px">Worth</p>
+          <p class="row-v t-h5 seq" style="--i:9;top:277px;color:var(--save-fill)">$216k ARR at risk</p>
+          <i class="div seq" style="--i:10;top:331px"></i>
+          <p class="row-k t-c12 seq" style="--i:11;top:345px">Do</p>
+          <p class="row-v t-h5 c-w seq" style="--i:12;top:365px">Value&nbsp;recovery before&nbsp;any&nbsp;discount</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ask-stage" id="ask">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="title-group">
+          <p class="t-caps">Why Opus</p>
+          <h2 class="t-h2">Analytics shows what happened. Opus shows what to&nbsp;do.</h2>
+        </div>
+        <p class="sub t-b16 balance">Same data, a different answer: the segment, <br>the cause, the value and the next&nbsp;step.</p>
+      </div>
+      <div class="widgets reveal">
+        <div class="w-dash glass glass-light">
+          <p class="k t-b16">Your dashboard</p>
+          <p class="big t-n64">6.4%</p>
+          <p class="meta t-caps">Churn · +0.6 pt</p>
+          <div class="chart">
+            <img src="assets/svg-b293614ac43e.svg" alt="">
+            <span style="left:0">Feb</span><span style="left:55px">Mar</span><span style="left:122px">Apr</span><span style="left:186px">May</span><span style="left:253.5px">Jun</span><span style="left:313px">Jul</span>
+          </div>
+          <p class="foot t-c14 balance">And then? Someone still has to find <br>out who left, why and what to&nbsp;do.</p>
+        </div>
+        <div class="w-ask glass glass-light">
+          <div class="head t-b16"><img src="assets/svg-10b6988c5bf5.svg" alt="">Ask Opus</div>
+          <div class="query">
+            <div class="q t-b16" id="ask-q"></div>
+            <span class="go"><img src="assets/svg-c14bb3b686a2.svg" alt=""></span>
+          </div>
+          <div class="answer">
+            <div class="finding"><p class="t-n40">72%</p><p class="t-b16 balance">of the increase came from Basic-plan customers acquired in the June&nbsp;promotion</p></div>
+            <div class="finding"><p class="t-n40">−21%</p><p class="t-b16 balance">activation rate for this group compared with the&nbsp;average</p></div>
+            <div class="finding"><p class="t-n40">2.1×</p><p class="t-b16 balance">more likely to cancel if they skipped&nbsp;onboarding</p></div>
+          </div>
+          <div class="spacer"></div>
+          <div class="recommended">
+            <div><p class="k t-c12">Recommended action</p><p class="t-h5 c-w">Onboarding recovery for 3,240 customers</p></div>
+            <a class="btn btn-accent btn-s" href="#campaign">Build campaign</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS: Stage_Flow ============ -->
+<section class="sec how" id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="title-group">
+        <p class="t-caps">How it works</p>
+        <h2 class="t-h2">Connect. Detect.&nbsp;Act.</h2>
+      </div>
+      <div class="side">
+        <p class="sub t-b16">Opus reads the tools you already use and finds the cheapest fix that&nbsp;works.</p>
+        <a class="btn btn-primary btn-s" href="#integrations">Connect your tools</a>
+      </div>
+    </div>
+    <div class="fit flow-fit reveal" data-w="1200" data-h="560" data-mw="376" data-mh="1260" data-mobile="flow">
+      <div class="stage flow" id="flow" data-step="1">
+        <img class="bg" src="assets/jpg-b7528f6cb5f6.jpg" alt="">
+        <div class="tint"></div>
+        <img class="connector" src="assets/svg-a52be3257bd0.svg" alt="">
+
+        <div class="fw glass glass-light" data-w="1" style="left:52px">
+          <p class="cap t-caps">01  Connect</p>
+          <div class="src" style="top:71px"><span class="lg"><img src="assets/svg-226051879fc5.svg" alt=""></span><div><b>Stripe</b><span>Billing</span></div></div>
+          <span class="tick" style="top:79px"><img src="assets/svg-ae3b5ad58a91.svg" alt=""></span>
+          <div class="src" style="top:123px"><span class="lg"><img src="assets/svg-41c934bdb995.svg" alt=""></span><div><b>Mixpanel</b><span>Product</span></div></div>
+          <span class="tick" style="top:131px"><img src="assets/svg-ae3b5ad58a91.svg" alt=""></span>
+          <div class="src" style="top:175px"><span class="lg"><img src="assets/svg-5fa7b86ffa6e.svg" alt=""></span><div><b>HubSpot</b><span>CRM</span></div></div>
+          <span class="tick" style="top:183px"><img src="assets/svg-ae3b5ad58a91.svg" alt=""></span>
+          <div class="src" style="top:227px"><span class="lg"><img src="assets/svg-33b5bd285d7b.svg" alt=""></span><div><b>Intercom</b><span>Support</span></div></div>
+          <span class="tick" style="top:235px"><img src="assets/svg-ae3b5ad58a91.svg" alt=""></span>
+          <p class="big t-n40">24,000</p>
+          <p class="meta t-caps">Customers connected</p>
+        </div>
+
+        <div class="fw glass glass-light dim" data-w="2" style="left:424px">
+          <p class="cap t-caps">02  Detect</p>
+          <p class="k t-b16">Annual subscribers</p>
+          <div class="chart"><img src="assets/svg-045cd00d3619.svg" alt=""></div>
+          <p class="note t-c14">Usage falls after month nine</p>
+          <p class="big t-n40">$216k</p>
+          <p class="meta t-caps">ARR at risk</p>
+        </div>
+
+        <div class="fw glass glass-light dim" data-w="3" style="left:796px">
+          <p class="cap t-caps">03  Act</p>
+          <p class="k t-b16">Discount</p>
+          <div class="ruler" id="ruler"><span class="handle"></span></div>
+          <p class="note t-c14">Start at 0%. Show unused value&nbsp;first.</p>
+          <p class="big t-n40">$61k</p>
+          <p class="meta t-caps">ARR recoverable</p>
+        </div>
+
+        <img class="traveler" src="assets/svg-016f737c6198.svg" alt="">
+        <span class="node on" style="left:224px"></span>
+        <span class="node" style="left:596px"></span>
+        <span class="node" style="left:968px"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Opus (v4 Flow) ============ -->
+<section class="sec map" id="map">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="title-group">
+        <p class="t-caps">Opus</p>
+        <h2 class="t-h2">See your customer base <br>as a living revenue&nbsp;map.</h2>
+      </div>
+      <p class="sub t-b16 balance">Your tools feed it. Opus groups customers by behaviour and sends the right action back&nbsp;out.</p>
+    </div>
+    <div class="fit map-fit reveal" data-w="1200" data-h="640" data-mw="350" data-mh="1000" data-mobile="flow">
+      <div class="stage mapflow">
+        <img class="conn" src="assets/svg-94c0a4338947.svg" alt="">
+        <svg class="flowdots" id="flowdots" viewBox="0 0 1200 640" width="1200" height="640" aria-hidden="true"></svg>
+
+        <p class="lbl lbl-in t-caps" style="left:0">Reads from</p>
+        <p class="lbl lbl-out t-caps" style="left:1016.67px">Acts through</p>
+
+        <div class="tool tl" style="left:0;top:40px"><img src="assets/svg-03245b5be385.svg" alt=""><div><b>Stripe</b><span>Billing</span></div></div>
+        <div class="tool tl" style="left:0;top:128px"><img src="assets/svg-958ae2efda9c.svg" alt=""><div><b>Shopify</b><span>Orders</span></div></div>
+        <div class="tool tl" style="left:0;top:216px"><img src="assets/svg-8158ed5066e8.svg" alt=""><div><b>Mixpanel</b><span>Product usage</span></div></div>
+        <div class="tool tl" style="left:0;top:304px"><img src="assets/svg-851a81485335.svg" alt=""><div><b>PostHog</b><span>Product usage</span></div></div>
+        <div class="tool tl" style="left:0;top:392px"><img src="assets/svg-2ac4532752d1.svg" alt=""><div><b>Salesforce</b><span>CRM</span></div></div>
+        <div class="tool tl" style="left:0;top:480px"><img src="assets/svg-eb8378d448b1.svg" alt=""><div><b>Zendesk</b><span>Support</span></div></div>
+        <div class="tool tl" style="left:0;top:568px"><img src="assets/svg-0e3237e5dc6f.svg" alt=""><div><b>Intercom</b><span>Conversations</span></div></div>
+        <div class="tool tr2" style="left:1016.67px;top:178px"><img src="assets/svg-b31d4d4adc4e.svg" alt=""><div><b>HubSpot</b><span>Emails</span></div></div>
+        <div class="tool tr2" style="left:1016.67px;top:266px"><img src="assets/svg-2d5b4c4ff41b.svg" alt=""><div><b>Mailchimp</b><span>Newsletters</span></div></div>
+        <div class="tool tr2" style="left:1016.67px;top:354px"><img src="assets/svg-1f9423b02500.svg" alt=""><div><b>Meta</b><span>Ad audiences</span></div></div>
+        <div class="tool tr2" style="left:1016.67px;top:442px"><img src="assets/svg-ddcc4247dbf9.svg" alt=""><div><b>Google</b><span>Ad audiences</span></div></div>
+
+        <div class="panel">
+          <img class="pbg" src="assets/jpg-5ef440464aad.jpg" alt="">
+          <div class="panel-inner">
+            <div class="panel-head"><img src="assets/svg-f908c33e84d0.svg" alt=""><p class="t-h5">Your customers, mapped</p></div>
+            <div class="seg"><span class="badge"><img src="assets/svg-65c44626b435.svg" alt=""></span><div><b>At-Risk High-Value</b><span>1,842 customers</span></div><em>$184k at risk</em></div>
+            <div class="seg"><span class="badge"><img src="assets/svg-4b7fd98812aa.svg" alt=""></span><div><b>Power Users</b><span>3,120 customers</span></div><em>$92k to expand</em></div>
+            <div class="seg"><span class="badge"><img src="assets/svg-a805e09bfe08.svg" alt=""></span><div><b>Dormant</b><span>1,091 customers</span></div><em>$48k to win back</em></div>
+            <div class="seg"><span class="badge"><img src="assets/svg-c20798b2b87f.svg" alt=""></span><div><b>Loyal Advocates</b><span>5,480 customers</span></div><em>+17% LTV</em></div>
+            <div class="seg"><span class="badge"><img src="assets/svg-b54e74dae774.svg" alt="" style="transform:rotate(180deg) scaleX(-1)"></span><div><b>Price-Sensitive</b><span>4,260 customers</span></div><em class="w">Watching</em></div>
+            <div class="seg"><span class="badge"><img src="assets/svg-5e8fb7cdab29.svg" alt=""></span><div><b>New Low-Activation</b><span>3,240 customers</span></div><em class="w">Watching</em></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CUSTOMER MAP (321:1146): interactive dot globe, people as markers ============ -->
+<section class="sec cmap" id="customer-map">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="title-group">
+        <p class="t-caps">Customer map</p>
+        <h2 class="t-h2">Every customer, <br>one living&nbsp;map.</h2>
+      </div>
+      <p class="sub t-b16">Each dot is a customer. Bright clusters are <br>segments worth acting&nbsp;on.</p>
+    </div>
+    <div class="fit cm-fit reveal" data-w="1200" data-h="720" data-mw="350" data-mh="800">
+      <div class="stage cm-stage" id="cmap">
+        <img class="cm-bg" src="assets/jpg-b7528f6cb5f6.jpg" alt="">
+        <div class="cm-tint"></div>
+        <canvas class="cm-canvas" aria-label="Globe of 24,000 customers grouped by segment" role="img"></canvas>
+        <svg class="cm-link" viewBox="0 0 1200 720" aria-hidden="true"><line x1="0" y1="0" x2="0" y2="0"/></svg>
+        <div class="cm-marks">
+          <button class="cm-m" style="--c:var(--save-fill)" data-seg="save" data-lat="22" data-lon="-22" data-name="Amara Lewis" data-meta="Annual plan, month 10" data-signal="Usage down 38% after month nine" data-worth="$1,920 ARR at risk" data-next="Value recap email" aria-label="Amara Lewis"><img src="assets/jpg-26d7d665c951.jpg" alt=""></button>
+          <button class="cm-m" style="--c:var(--deepen-fill)" data-seg="deep" data-lat="-30" data-lon="-60" data-name="Mei Tanaka" data-meta="Pro plan, 2 years" data-signal="Uses Reports, never opened Forecasts" data-worth="+$640 LTV potential" data-next="Show Forecasts in-app" aria-label="Mei Tanaka"><img src="assets/jpg-d8727e3e681c.jpg" alt=""></button>
+          <button class="cm-m" style="--c:var(--grow-fill)" data-seg="grow" data-lat="-8" data-lon="26" data-name="Daniel Ortiz" data-meta="Standard plan" data-signal="Hit the seat limit 3 times this month" data-worth="+$2,400 ARR expansion" data-next="Offer the Pro upgrade" aria-label="Daniel Ortiz"><img src="assets/jpg-373288fb0289.jpg" alt=""></button>
+          <button class="cm-m" style="--c:var(--save-fill)" data-seg="save" data-lat="10" data-lon="-38" data-name="Marcus Reed" data-meta="Team plan, month 14" data-signal="Two admins inactive for 3 weeks" data-worth="$4,800 ARR at risk" data-next="Success call this week" aria-label="Marcus Reed"><img src="assets/jpg-cbe09b7f7be6.jpg" alt=""></button>
+          <button class="cm-m" style="--c:var(--reactivate-fill)" data-seg="react" data-lat="42" data-lon="50" data-name="Claire Bennett" data-meta="Cancelled 45 days ago" data-signal="Opened the last two product emails" data-worth="$1,200 ARR to win back" data-next="Win-back without a discount" aria-label="Claire Bennett"><img src="assets/jpg-bc60c87a4bc6.jpg" alt=""></button>
+          <button class="cm-m" style="--c:var(--save-fill)" data-seg="save" data-lat="28" data-lon="-40" data-name="Kenji Mori" data-meta="Annual plan, month 11" data-signal="Renewal in 21 days, low usage" data-worth="$3,600 ARR at risk" data-next="Offer a pause option" aria-label="Kenji Mori"><img src="assets/jpg-40caf50d06da.jpg" alt=""></button>
+          <button class="cm-m" style="--c:var(--grow-fill)" data-seg="grow" data-lat="-20" data-lon="40" data-name="Priya Shah" data-meta="Standard plan" data-signal="Invited 6 teammates this week" data-worth="+$1,800 ARR expansion" data-next="Suggest the Team plan" aria-label="Priya Shah"><img src="assets/jpg-cc980f4d3d23.jpg" alt=""></button>
+          <button class="cm-m" style="--c:var(--deepen-fill)" data-seg="deep" data-lat="-42" data-lon="-78" data-name="Helen Ward" data-meta="Pro plan, 3 years" data-signal="Never connected an integration" data-worth="+$900 LTV potential" data-next="Send the integration guide" aria-label="Helen Ward"><img src="assets/jpg-3231b0a36d49.jpg" alt=""></button>
+          <button class="cm-m" style="--c:var(--reactivate-fill)" data-seg="react" data-lat="32" data-lon="66" data-name="Omar Haddad" data-meta="Paused 30 days ago" data-signal="Logged in twice this week" data-worth="$960 ARR to win back" data-next="Resume offer" aria-label="Omar Haddad"><img src="assets/jpg-36dc5d67b0b7.jpg" alt=""></button>
+          <button class="cm-m" style="--c:var(--save-fill)" data-seg="save" data-lat="14" data-lon="-12" data-name="Liam Carter" data-meta="Monthly plan, week 3" data-signal="Skipped onboarding" data-worth="$480 ARR at risk" data-next="Guided onboarding" aria-label="Liam Carter"><img src="assets/jpg-3adc359a7222.jpg" alt=""></button>
+          <button class="cm-m" style="--c:var(--grow-fill)" data-seg="grow" data-lat="-4" data-lon="44" data-name="Grace Mensah" data-meta="Team plan" data-signal="Usage up 64% this quarter" data-worth="+$3,000 ARR expansion" data-next="Annual plan offer" aria-label="Grace Mensah"><img src="assets/jpg-a1b5319e5bca.jpg" alt=""></button>
+        </div>
+        <div class="cm-filters" role="group" aria-label="Segments">
+          <p class="t-caps">Segments</p>
+          <button class="cm-f on" data-seg="all"><i style="--c:#fff"></i><span class="t-c14m">All customers</span><span class="t-c14 n">24,000</span></button>
+          <button class="cm-f" data-seg="save"><i style="--c:var(--save-fill)"></i><span class="t-c14m">Save</span><span class="t-c14 n">3,126</span></button>
+          <button class="cm-f" data-seg="grow"><i style="--c:var(--grow-fill)"></i><span class="t-c14m">Grow</span><span class="t-c14 n">742</span></button>
+          <button class="cm-f" data-seg="react"><i style="--c:var(--reactivate-fill)"></i><span class="t-c14m">Reactivate</span><span class="t-c14 n">1,091</span></button>
+          <button class="cm-f" data-seg="deep"><i style="--c:var(--deepen-fill)"></i><span class="t-c14m">Deepen</span><span class="t-c14 n">2,460</span></button>
+        </div>
+        <div class="cm-card" aria-live="polite">
+          <div class="cm-head"><img class="cm-av" src="assets/jpg-26d7d665c951.jpg" alt=""><div><p class="t-h5 cm-name">Amara Lewis</p><p class="t-c14 cm-meta">Annual plan, month 10</p></div></div>
+          <span class="cm-seg"><i></i><span class="t-c12">Save</span></span>
+          <div class="cm-row"><p class="t-caps">Signal</p><p class="t-c14 cm-signal">Usage down 38% after month nine</p></div>
+          <div class="cm-row"><p class="t-caps">Worth</p><p class="t-c14 cm-worth">$1,920 ARR at risk</p></div>
+          <div class="cm-row"><p class="t-caps">Next step</p><p class="t-c14 cm-next">Value recap email</p></div>
+          <a class="btn btn-accent btn-s" href="#campaign">Add to campaign</a>
+        </div>
+        <p class="cm-hint t-c14">Drag to rotate. Click a person to see&nbsp;why.</p>
+        <div class="cm-zoom"><button type="button" data-z="1" aria-label="Zoom in">+</button><button type="button" data-z="-1" aria-label="Zoom out">&minus;</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPPORTUNITIES ============ -->
+<section class="opps" id="opportunities">
+  <div class="glow l"><img src="assets/svg-885caf01523e.svg" alt="" style="width:100%;height:100%"></div>
+  <div class="glow r"><img src="assets/svg-db2e3b6bcd95.svg" alt=""></div>
+  <div class="wrap opps-in">
+    <div class="opps-left reveal">
+      <div class="title-group" style="width:auto">
+        <p class="t-caps">Opportunities</p>
+        <h2 class="t-h2">Know where the money&nbsp;is.</h2>
+      </div>
+      <div class="types">
+        <div class="type"><span class="ic"><span class="ico ico-save"><svg aria-hidden="true" focusable="false" width="17.0815" height="17.9167" viewBox="0 0 17.0815 17.9167" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" class="shield" d="M2.4855 2.92075C4.40756 2.30749 6.03276 0.625 8.53924 0.625C11.0458 0.625 12.6729 2.30762 14.5957 2.92082C15.3771 3.17004 15.7679 3.29465 15.9261 3.47041C16.0842 3.64616 16.1306 3.90303 16.2232 4.41677C17.2146 9.91331 15.0504 14.995 9.88458 16.9729C9.32954 17.1854 9.05202 17.2917 8.54198 17.2917C8.03193 17.2917 7.7544 17.1854 7.19932 16.9729C2.03316 14.995 -0.133063 9.91333 0.85801 4.41678C0.950626 3.90312 0.996934 3.6463 1.15508 3.47054C1.31322 3.29479 1.70398 3.17011 2.4855 2.92075Z" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" stroke="white"/><path class="chk" pathLength="1" d="M6.04074 9.79167C6.04074 9.79167 6.87407 9.79167 7.70741 11.4583C7.70741 11.4583 10.3545 7.29167 12.7074 6.45833" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" stroke="white"/></g></svg></span></span><div><p class="t-h5">Save</p><p class="t-c14">$400k at risk · 3,126 customers</p></div></div>
+        <div class="type"><span class="ic"><span class="ico ico-grow"><svg aria-hidden="true" focusable="false" width="16.25" height="16.25" viewBox="0 0 16.25 16.25" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" class="axis" d="M15.625 15.625H6.45833C3.70847 15.625 2.33354 15.625 1.47927 14.7707C0.625001 13.9165 0.625001 12.5415 0.625001 9.79167V0.625" stroke-width="1.25" stroke-linecap="round" stroke="white"/><path class="trend" pathLength="1" d="M12.9239 3.95833C12.9239 9.48118 8.90985 12.2917 3.95833 12.2917M11.056 4.79167L11.8673 3.92406C12.3653 3.39135 12.6144 3.125 12.9239 3.125C13.2333 3.125 13.4824 3.39136 13.9804 3.92406L14.7917 4.79167" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" stroke="white"/></g></svg></span></span><div><p class="t-h5">Grow</p><p class="t-c14">$92k to expand · 742 customers</p></div></div>
+        <div class="type"><span class="ic"><span class="ico ico-react"><svg aria-hidden="true" focusable="false" width="17.9167" height="17.9167" viewBox="0 0 17.9167 17.9167" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" class="loop" d="M15.6327 0.625V3.23516C15.6327 3.48004 15.3265 3.5909 15.1697 3.40278C13.6439 1.69792 11.4264 0.625 8.95833 0.625C4.35596 0.625 0.625 4.35596 0.625 8.95833C0.625 13.5607 4.35596 17.2917 8.95833 17.2917C13.5607 17.2917 17.2917 13.5607 17.2917 8.95833" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" stroke="white"/></g></svg></span></span><div><p class="t-h5">Reactivate</p><p class="t-c14">$48k to win back · 1,091 customers</p></div></div>
+        <div class="type"><span class="ic"><span class="ico ico-deep"><svg aria-hidden="true" focusable="false" width="16.25" height="17.9167" viewBox="0 0 16.25 17.9167" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" class="l1" d="M3.9068 2.23635L5.32748 1.57966C6.70437 0.94322 7.39281 0.625 8.125 0.625C8.85719 0.625 9.54563 0.94322 10.9225 1.57966L12.3432 2.23635C14.5311 3.24765 15.625 3.75331 15.625 4.58333C15.625 5.41336 14.5311 5.91901 12.3432 6.93032L10.9225 7.58701C9.54563 8.22345 8.85719 8.54167 8.125 8.54167C7.39281 8.54167 6.70436 8.22345 5.32749 7.58701L3.9068 6.93032C1.71893 5.91901 0.625 5.41336 0.625 4.58333C0.625 3.75331 1.71893 3.24765 3.9068 2.23635Z" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" stroke="white"/><path pathLength="1" class="l2" d="M15.4483 8.20604C15.5661 8.37167 15.625 8.54429 15.625 8.73413C15.625 9.55234 14.5311 10.0508 12.3432 11.0477L12.3432 11.0477L10.9225 11.695L10.9225 11.695C9.54563 12.3224 8.85719 12.6361 8.125 12.6361C7.39281 12.6361 6.70436 12.3224 5.32749 11.695L3.9068 11.0477C1.71894 10.0508 0.625 9.55234 0.625 8.73413C0.625 8.54429 0.683889 8.37167 0.801666 8.20604" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" stroke="white"/><path pathLength="1" class="l3" d="M15.1056 12.5134C15.4519 12.7893 15.625 13.0642 15.625 13.3897C15.625 14.2079 14.5311 14.7063 12.3432 15.7033L12.3432 15.7033L10.9225 16.3506C9.54563 16.978 8.85719 17.2917 8.125 17.2917C7.39281 17.2917 6.70436 16.978 5.32749 16.3506L3.9068 15.7033C1.71894 14.7064 0.625 14.2079 0.625 13.3897C0.625 13.0642 0.798149 12.7893 1.14445 12.5134" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" stroke="white"/></g></svg></span></span><div><p class="t-h5">Deepen</p><p class="t-c14">+17% LTV potential · 6 segments</p></div></div>
+      </div>
+    </div>
+    <div class="insights reveal">
+      <div class="insight"><span class="ico ico-alert"><svg aria-hidden="true" focusable="false" width="17.9167" height="17.0833" viewBox="0 0 17.9167 17.0833" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" class="tri" d="M8.95834 16.4583C4.93554 16.4583 2.92415 16.4583 1.84581 15.4664C1.25257 14.9207 0.843662 14.1972 0.67769 13.3995C0.375999 11.9494 1.3817 10.1699 3.39309 6.61077C5.40449 3.05165 6.41019 1.2721 7.79022 0.814009C8.54943 0.561997 9.36724 0.561997 10.1265 0.814009C11.5065 1.2721 12.5122 3.05165 14.5236 6.61077C16.535 10.1699 17.5407 11.9494 17.239 13.3995C17.073 14.1972 16.6641 14.9207 16.0709 15.4664C14.9925 16.4583 12.9811 16.4583 8.95834 16.4583Z" stroke-width="1.25" stroke="white"/><path pathLength="1" class="dot" d="M8.95167 11.875H8.95915" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" stroke="white"/><path pathLength="1" class="bar" d="M8.95834 9.375L8.95834 6.04167" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" stroke="white"/></g></svg></span><p class="t-h5">Churn risk detected</p><p class="t-b16 balance">Basic-plan&nbsp;customers&nbsp;who&nbsp;skip&nbsp;Feature&nbsp;X in&nbsp;their&nbsp;first&nbsp;14&nbsp;days&nbsp;are&nbsp;2.3×&nbsp;more&nbsp;likely&nbsp;to&nbsp;cancel.</p></div>
+      <div class="insight"><span class="ico ico-up"><svg aria-hidden="true" focusable="false" width="17.0833" height="17.0833" viewBox="0 0 17.0833 17.0833" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" class="b1" d="M4.375 13.5417L4.375 11.875" stroke-width="1.25" stroke-linecap="round" stroke="white"/><path pathLength="1" class="b2" d="M8.54167 13.5417L8.54167 11.0417" stroke-width="1.25" stroke-linecap="round" stroke="white"/><path pathLength="1" class="b3" d="M12.7083 13.5417L12.7083 9.375" stroke-width="1.25" stroke-linecap="round" stroke="white"/><path class="arrow" pathLength="1" d="M3.54167 8.125C7.29167 8.125 10.2083 6.875 11.875 3.95833M10.2083 3.78731L11.2647 3.61307C11.7088 3.53981 11.9309 3.50318 12.1034 3.60128C12.276 3.69938 12.3318 3.8939 12.4432 4.28294L12.7083 5.20833" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" stroke="white"/><path pathLength="1" class="frame" d="M8.54167 16.4583C4.80971 16.4583 2.94374 16.4583 1.78437 15.299C0.625 14.1396 0.625 12.2736 0.625 8.54167C0.625 4.80971 0.625 2.94374 1.78437 1.78437C2.94374 0.625 4.80971 0.625 8.54167 0.625C12.2736 0.625 14.1396 0.625 15.299 1.78437C16.4583 2.94374 16.4583 4.80971 16.4583 8.54167C16.4583 12.2736 16.4583 14.1396 15.299 15.299C14.1396 16.4583 12.2736 16.4583 8.54167 16.4583Z" stroke-width="1.25" stroke="white"/></g></svg></span><p class="t-h5">Upgrade opportunity</p><p class="t-b16 balance">Power users on Standard hit their usage limit three times a&nbsp;month.</p></div>
+      <div class="insight"><span class="ico ico-target"><svg aria-hidden="true" focusable="false" width="17.9167" height="17.9167" viewBox="0 0 17.9167 17.9167" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path pathLength="1" class="ring" d="M13.125 8.95841C13.125 11.2596 11.2595 13.1251 8.95833 13.1251C6.65715 13.1251 4.79167 11.2596 4.79167 8.95841C4.79167 6.65722 6.65715 4.79174 8.95833 4.79174" stroke-width="1.25" stroke-linecap="round" stroke="white"/><path pathLength="1" class="ring2" d="M10.625 0.791775C10.0865 0.682462 9.52911 0.625078 8.95833 0.625078C4.35596 0.625078 0.625 4.35604 0.625 8.95841C0.625 13.5608 4.35596 17.2917 8.95833 17.2917C13.5607 17.2917 17.2917 13.5608 17.2917 8.95841C17.2917 8.38763 17.2343 7.83026 17.125 7.29174" stroke-width="1.25" stroke-linecap="round" stroke="white"/><path class="dart" d="M8.51639 8.51647C8.27231 8.76055 8.27231 9.15628 8.51639 9.40035C8.76047 9.64443 9.1562 9.64443 9.40027 9.40035L8.95833 8.95841L8.51639 8.51647ZM15.3674 2.54934L14.7626 2.70713C14.8198 2.92603 14.9907 3.09698 15.2096 3.1541L15.3674 2.54934ZM14.9371 0.900136L14.3323 1.05793V1.05793L14.9371 0.900136ZM14.2067 0.783461L14.6486 1.2254V1.2254L14.2067 0.783461ZM13.2489 1.74128L12.8069 1.29934V1.29934L13.2489 1.74128ZM12.5234 4.08449L11.9187 4.24228V4.24228L12.5234 4.08449ZM17.0166 2.97964L16.8588 3.5844V3.5844L17.0166 2.97964ZM17.1333 3.71005L16.6913 3.2681V3.2681L17.1333 3.71005ZM16.1755 4.66787L16.6174 5.10981V5.10981L16.1755 4.66787ZM13.8323 5.39329L13.6745 5.99805V5.99805L13.8323 5.39329ZM12.7943 5.12247L12.3523 4.68053L8.51639 8.51647L8.95833 8.95841L9.40027 9.40035L13.2362 5.56441L12.7943 5.12247ZM15.3674 2.54934L15.9722 2.39155L15.5419 0.742347L14.9371 0.900136L14.3323 1.05793L14.7626 2.70713L15.3674 2.54934ZM14.2067 0.783461L13.7648 0.341519L12.8069 1.29934L13.2489 1.74128L13.6908 2.18322L14.6486 1.2254L14.2067 0.783461ZM12.5234 4.08449L11.9187 4.24228L12.1895 5.28026L12.7943 5.12247L13.399 4.96468L13.1282 3.9267L12.5234 4.08449ZM15.3674 2.54934L15.2096 3.1541L16.8588 3.5844L17.0166 2.97964L17.1744 2.37489L15.5252 1.94459L15.3674 2.54934ZM17.1333 3.71005L16.6913 3.2681L15.7335 4.22592L16.1755 4.66787L16.6174 5.10981L17.5752 4.15199L17.1333 3.71005ZM13.8323 5.39329L13.99 4.78854L12.9521 4.51772L12.7943 5.12247L12.6365 5.72722L13.6745 5.99805L13.8323 5.39329ZM16.1755 4.66787L15.7335 4.22592C15.216 4.74342 14.5301 4.92944 13.99 4.78854L13.8323 5.39329L13.6745 5.99805C14.7071 6.26747 15.8354 5.89182 16.6174 5.10981L16.1755 4.66787ZM17.0166 2.97964L16.8588 3.5844C16.8161 3.57326 16.7675 3.54608 16.7285 3.50112C16.6914 3.45832 16.6748 3.41305 16.6692 3.37799C16.6581 3.30867 16.6861 3.27334 16.6913 3.2681L17.1333 3.71005L17.5752 4.15199C17.8355 3.89171 17.9595 3.53145 17.9035 3.18081C17.8456 2.81831 17.5906 2.48347 17.1744 2.37489L17.0166 2.97964ZM13.2489 1.74128L12.8069 1.29934C12.0249 2.08135 11.6493 3.20967 11.9187 4.24228L12.5234 4.08449L13.1282 3.9267C12.9873 3.38667 13.1733 2.70072 13.6908 2.18322L13.2489 1.74128ZM14.9371 0.900136L15.5419 0.742347C15.4333 0.326188 15.0984 0.0711458 14.7359 0.0132397C14.3853 -0.0427712 14.025 0.0812404 13.7648 0.341519L14.2067 0.783461L14.6486 1.2254C14.6434 1.23064 14.6081 1.25866 14.5388 1.24759C14.5037 1.24199 14.4584 1.2253 14.4156 1.18821C14.3707 1.14926 14.3435 1.10062 14.3323 1.05793L14.9371 0.900136Z" fill="white"/></g></svg></span><p class="t-h5">Cross-sell opportunity</p><p class="t-b16 balance">Customers&nbsp;who&nbsp;use&nbsp;Feature&nbsp;A&nbsp;and&nbsp;B are&nbsp;worth&nbsp;1.8×&nbsp;more,&nbsp;yet&nbsp;64%&nbsp;never&nbsp;tried&nbsp;B.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEXT BEST ACTION (sticky card, steps scroll past it, ref reflexai.com) ============ -->
+<section class="sec nba" id="nba">
+  <div class="wrap nba-grid">
+    <div class="nba-col">
+      <div class="nba-block first" data-step="0">
+        <div class="nba-intro reveal">
+          <p class="t-caps">Next best action</p>
+          <h2 class="t-h2">Don’t start <br>with a&nbsp;discount.</h2>
+          <p class="t-b16 balance">Opus&nbsp;starts&nbsp;with&nbsp;the&nbsp;cheapest fix&nbsp;likely&nbsp;to&nbsp;work.&nbsp;A&nbsp;discount&nbsp;comes&nbsp;last.</p>
+          <div><a class="btn btn-accent" href="#campaign">Build intervention</a></div>
+        </div>
+        <div class="step-text">
+          <div class="indicator"><span class="dots" aria-label="Step 1 of 3"><i class="f"></i><i></i><i></i></span><span class="t-caps">No cost</span></div>
+          <div class="txt"><p class="t-h4">Show unused product value</p><p class="t-b16">Remind them what they already pay&nbsp;for.</p></div>
+        </div>
+      </div>
+      <div class="nba-block" data-step="1">
+        <div class="step-text">
+          <div class="indicator"><span class="dots" aria-label="Step 2 of 3"><i class="f"></i><i class="f"></i><i></i></span><span class="t-caps">CS time</span></div>
+          <div class="txt"><p class="t-h4">Offer an&nbsp;account review</p><p class="t-b16">A 20-minute call with their success&nbsp;manager.</p></div>
+        </div>
+      </div>
+      <div class="nba-block" data-step="2">
+        <div class="step-text">
+          <div class="indicator"><span class="dots save" aria-label="Step 3 of 3"><i class="f"></i><i class="f"></i><i class="f"></i></span><span class="t-caps save">Costs margin</span></div>
+          <div class="txt"><p class="t-h4">Discount only for&nbsp;price‑sensitive&nbsp;customers</p><p class="t-b16">The last step, and only for those who need&nbsp;it.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nba-media">
+      <div class="nba-frame" id="nba-frame">
+        <!-- Step 1: in-app message -->
+        <div class="nba-layer deep on" data-layer="0">
+          <img class="pattern drift" src="assets/svg-f32f4602f700.svg" alt="" style="left:-163.3px;top:25.7px;width:948px;height:718.47px;opacity:.1">
+          <div class="nba-panel glass-flat glass-lite">
+            <div class="p-head a-in"><img src="assets/svg-abb0edcc192a.svg" alt=""><span class="t-caps">In-app message</span></div>
+            <p class="t-h5 c-w a-in"><span class="type" data-text="You already pay for these">You already pay for&nbsp;these</span></p>
+            <div class="p-list">
+              <div class="p-row a-in"><span>Forecasts</span><span>Never opened</span></div>
+              <div class="p-row a-in"><span>Team seats</span><span>3 of 5 unused</span></div>
+              <div class="p-row a-in"><span>API access</span><span>Never opened</span></div>
+            </div>
+            <a class="btn btn-pi btn-s a-in pressable" href="#campaign">Open Forecasts</a>
+          </div>
+          <p class="caption">Sending to <span class="num" data-to="1284">1,284</span> customers</p>
+        </div>
+        <!-- Step 2: account review -->
+        <div class="nba-layer muted" data-layer="1">
+          <img class="pattern drift" src="assets/svg-7a92a2c02b99.svg" alt="" style="left:-57.4px;top:146.2px;width:805.38px;height:864px">
+          <div class="nba-panel light">
+            <div class="person a-in">
+              <div class="who"><span class="avatar"><img src="assets/jpg-c1fbfbb85a59.jpg" alt="Anna Lee"></span><div><b>Anna Lee</b><span>Your success manager</span></div></div>
+              <span class="duration"><img src="assets/svg-5eefe7579c15.svg" alt="">20 min</span>
+            </div>
+            <p class="lbl t-caps a-in">Pick a time</p>
+            <div class="slots" role="radiogroup" aria-label="Pick a time">
+              <button class="slot a-in" role="radio" aria-checked="false">Tue 14, 10:00</button>
+              <button class="slot a-in sel" role="radio" aria-checked="true">Tue 14, 14:30</button>
+              <button class="slot a-in" role="radio" aria-checked="false">Wed 15, 11:00</button>
+              <button class="slot a-in" role="radio" aria-checked="false">Thu 16, 09:30</button>
+            </div>
+            <a class="btn btn-primary btn-s a-in pressable" href="#campaign">Confirm review</a>
+          </div>
+          <p class="caption" style="color:rgba(20,20,18,.7)">Offered to <span class="num" data-to="470">470</span> customers with no response yet</p>
+        </div>
+        <!-- Step 3: targeted incentive -->
+        <div class="nba-layer ink" data-layer="2">
+          <img class="pattern drift" src="assets/svg-6da1a8cc2afd.svg" alt="" style="left:-397.5px;top:14.4px;width:551.26px;height:438.82px">
+          <img class="pattern drift r" src="assets/svg-4c76dd721a56.svg" alt="" style="left:563px;top:14.4px;width:551.26px;height:438.82px">
+          <div class="nba-panel glass-flat">
+            <div class="p-head a-in"><img src="assets/svg-fb06984cb4d6.svg" alt="" style="transform:rotate(180deg) scaleX(-1)"><span class="t-caps">Renewal incentive</span></div>
+            <p class="offer-big t-n40 a-in"><span class="num" data-to="20">20</span>% off</p>
+            <div class="rule">
+              <p class="t-c14 a-in">Only for customers who</p>
+              <div class="signals-chips"><span class="sc a-in">Viewed pricing 3+ times</span><span class="sc a-in">Asked about price</span><span class="sc a-in">Use it every week</span></div>
+            </div>
+            <div class="kv a-in"><span>Audience</span><b><span class="num" data-to="64">64</span> of 1,284</b></div>
+            <div class="kv a-in"><span>Margin cost</span><b class="save">−$<span class="num" data-to="2.1" data-dec="1">2.1</span>k ARR</b></div>
+          </div>
+          <p class="caption">Everyone else renews at full&nbsp;price</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFER INTELLIGENCE (drum) ============ -->
+<section class="offer" id="offer">
+  <img class="bg" src="assets/jpg-960fa8627efc.jpg" alt="">
+  <div class="tint"></div>
+  <div class="wrap">
+    <div class="fit drum-fit" data-w="1200" data-h="660" data-mw="350" data-mh="640" data-mobile="flow">
+      <div class="stage drum" id="drum">
+        <div class="drum-intro">
+          <p class="t-caps">Offer intelligence</p>
+          <h2 class="t-h2">Stop giving every customer the&nbsp;same&nbsp;discount.</h2>
+          <p class="t-b16">Only a third of cancellations are about&nbsp;price. <br>The rest need a cheaper fix than a&nbsp;discount.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAMPAIGN BUILDER v2 ============ -->
+<section class="sec campaign" id="campaign">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="title-group">
+        <p class="t-caps">Campaign builder</p>
+        <h2 class="t-h2">Turn intelligence into&nbsp;action.</h2>
+      </div>
+      <p class="sub t-b16">Approve a strategy and the campaign <br>is ready. Your own tools send&nbsp;it.</p>
+    </div>
+    <div class="cb-cards">
+      <div class="cb-card reveal">
+        <div class="cap"><p class="t-h5">Approve</p><p class="t-c14">You sign off on the strategy</p></div>
+        <div class="visual">
+          <div class="composer-card">
+            <div class="author"><img src="assets/png-8b1b153549c4.png" alt=""><span class="t-c12m">Maya Ortiz</span><span class="t-c12 r">Head of Growth</span></div>
+            <div class="field">
+              <p class="t-c14 balance">Win back annual subscribers before renewal. Start without a&nbsp;discount.</p>
+              <div class="acts"><button class="send-btn" aria-label="Approve"><img src="assets/svg-091d31605e2f.svg" alt=""></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cb-card reveal" id="build">
+        <div class="cap"><p class="t-h5">Build</p><p class="t-c14">Audience, offer and message in&nbsp;one&nbsp;go</p></div>
+        <div class="visual">
+          <div class="build-card">
+            <div class="build-head"><span class="t-c14m">Renewal save</span><span class="pct t-c12m" id="build-pct">0%</span></div>
+            <div class="progress"><i></i></div>
+            <div>
+              <div class="part"><img src="assets/svg-c4016274e45e.svg" alt=""><span class="n t-c14">Audience</span><span class="v t-c12">1,284 customers</span></div>
+              <div class="part"><img src="assets/svg-c4016274e45e.svg" alt=""><span class="n t-c14">Offer</span><span class="v t-c12">Value recap, then pause</span></div>
+              <div class="part"><img src="assets/svg-c4016274e45e.svg" alt=""><span class="n t-c14">Message</span><span class="v t-c12">3 variants</span></div>
+              <div class="part wait"><img src="assets/svg-de0792342441.svg" alt=""><span class="n t-c14">Channels</span><span class="v t-c12">Connecting</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cb-card cb-send reveal">
+        <img class="pattern" src="assets/svg-3493ac44fc72.svg" alt="">
+        <div class="cap"><p class="t-h5">Send</p><p class="t-c14">Through the tools you already&nbsp;use</p></div>
+        <div class="visual">
+          <div class="channel"><span class="lg"><img src="assets/svg-d826fef90054.svg" alt=""></span><div class="tx"><p class="t-c14m">Email</p><span class="t-c12">HubSpot</span></div><span class="st t-c12">1,284 queued</span></div>
+          <div class="channel"><span class="lg"><img src="assets/svg-1e536a08b31c.svg" alt=""></span><div class="tx"><p class="t-c14m">In-app message</p><span class="t-c12">Intercom</span></div><span class="st t-c12">Live</span></div>
+          <div class="channel"><img src="assets/png-19ee9839f4c7.png" alt=""><div class="tx"><p class="t-c14m">Daniel</p><span class="t-c12">Customer Success</span></div><span class="st t-c12">47 invited</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="outcome reveal">
+      <p class="t-n40">$61k</p>
+      <p class="t-b16">ARR expected to be retained</p>
+      <a class="btn btn-secondary" href="#campaign">Edit campaign</a>
+      <a class="btn btn-accent" href="#campaign">Launch campaign</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESULTS ============ -->
+<section class="sec results" id="results">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="title-group">
+        <p class="t-caps">Results and learning</p>
+        <h2 class="t-h2">Measured in revenue. <br>Smarter with every&nbsp;result.</h2>
+      </div>
+      <p class="sub t-b16 balance">Each recommendation runs as an experiment. Opus tracks results and learns which interventions work for which&nbsp;customers.</p>
+    </div>
+    <div class="fit res-fit" data-w="1200" data-h="560" data-mw="374" data-mh="894" data-mobile="flow">
+      <div class="stage res" id="res">
+        <img class="bg" src="assets/jpg-98aa7665d1f2.jpg" alt="">
+        <div class="tint"></div>
+        <div class="rw rw-rev glass">
+          <p class="k t-b16">Revenue influenced this month</p>
+          <p class="big t-n64" data-count="137400" data-fmt="usd">$0</p>
+          <div class="rbar">
+            <i style="left:0;background:var(--save-fill)" data-w="43.75"></i>
+            <i style="left:44.56%;background:var(--grow-fill)" data-w="30.44"></i>
+            <i style="left:75.81%;background:var(--reactivate-fill)" data-w="14.52"></i>
+            <i style="left:91.13%;background:var(--deepen-fill)" data-w="8.06"></i>
+          </div>
+          <div class="legend">
+            <div class="li"><p class="lk"><i class="dot" style="background:var(--save-fill)"></i>Saved</p><p class="t-n40" data-count="61200" data-fmt="usd">$0</p></div>
+            <div class="li"><p class="lk"><i class="dot" style="background:var(--grow-fill)"></i>Expansion</p><p class="t-n40" data-count="42800" data-fmt="usd">$0</p></div>
+            <div class="li"><p class="lk"><i class="dot" style="background:var(--reactivate-fill)"></i>Reactivation</p><p class="t-n40" data-count="21100" data-fmt="usd">$0</p></div>
+            <div class="li"><p class="lk"><i class="dot" style="background:var(--deepen-fill)"></i>Repeat revenue</p><p class="t-n40" data-count="12300" data-fmt="usd">$0</p></div>
+          </div>
+        </div>
+        <div class="rw-col">
+          <div class="rw rw-exp glass">
+            <p class="k t-c14">Experiment · 90-day retained revenue</p>
+            <div class="xr"><div class="xl"><p class="t-c14">A · 20% renewal discount</p><p class="t-c14" data-count="18.2" data-fmt="k">$0k</p></div><div class="tr"><i data-w="53.48"></i></div></div>
+            <div class="xr"><div class="xl"><p class="t-c14">B · 2-month pause</p><p class="t-c14" data-count="24.6" data-fmt="k">$0k</p></div><div class="tr"><i data-w="72.34"></i></div></div>
+            <div class="xr win"><div class="xl"><p class="t-c14">C · 1:1 onboarding</p><p class="t-c14" data-count="31.4" data-fmt="k">$0k</p></div><div class="tr"><i class="mint" data-w="92.42"></i></div></div>
+          </div>
+          <div class="rw rw-learn glass">
+            <div class="lh"><img src="assets/svg-160eeba3db1f.svg" alt="" style="padding:1.04px"><p class="t-c14">What Opus learned</p></div>
+            <p class="t-h5">Low-engagement customers respond <br>to onboarding, not discounts. <br>Next time it starts there.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="sec pricing" id="pricing">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="title-group">
+        <p class="t-caps">Pricing</p>
+        <h2 class="t-h2">Pay for the customers <br>you grow, not for&nbsp;seats.</h2>
+      </div>
+      <p class="sub t-b16 balance">Start&nbsp;with&nbsp;billing&nbsp;and&nbsp;product&nbsp;data.&nbsp;Move&nbsp;up when&nbsp;Opus&nbsp;runs&nbsp;your&nbsp;campaigns.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <div class="name-row"><p class="t-caps">Starter</p></div>
+        <p class="desc t-c14">For smaller subscription&nbsp;businesses.</p>
+        <div class="price"><p class="t-n64">$99</p><p class="t-caps">/ month</p></div>
+        <a class="btn btn-secondary" href="#faq">Get started</a>
+        <div class="divider"></div>
+        <div class="features">
+          <div class="feature"><span class="tk"><img src="assets/svg-97d27d5bffa5.svg" alt=""></span><p class="t-c14">Opus and behavioural segments</p></div>
+          <div class="feature"><span class="tk"><img src="assets/svg-97d27d5bffa5.svg" alt=""></span><p class="t-c14">Save,&nbsp;Grow,&nbsp;Reactivate and&nbsp;Deepen&nbsp;opportunities</p></div>
+          <div class="feature"><span class="tk"><img src="assets/svg-97d27d5bffa5.svg" alt=""></span><p class="t-c14">Ask Opus</p></div>
+          <div class="feature"><span class="tk"><img src="assets/svg-97d27d5bffa5.svg" alt=""></span><p class="t-c14">Billing and product analytics&nbsp;data</p></div>
+        </div>
+      </div>
+      <div class="plan growth reveal">
+        <img class="bgimg" src="assets/jpg-082b680e4666.jpg" alt="">
+        <img class="blob" src="assets/svg-769868184d15.svg" alt="" style="left:-230px;top:-270px;width:640px;height:600px">
+        <img class="blob" src="assets/svg-598fa59267a6.svg" alt="" style="left:10px;top:70px;width:640px;height:600px">
+        <img class="blob" src="assets/svg-dc8e9cb24f93.svg" alt="" style="left:-190px;top:210px;width:640px;height:580px">
+        <div class="tint"></div>
+        <div class="name-row"><p class="t-caps">Growth</p><span class="badge-glass">Most teams start here</span></div>
+        <p class="desc t-c14">For larger customer bases that run&nbsp;campaigns.</p>
+        <div class="price"><p class="t-n64">$299</p><p class="t-caps">/ month</p></div>
+        <a class="btn btn-accent" href="#faq">Get started</a>
+        <div class="divider"></div>
+        <div class="features">
+          <div class="feature"><span class="tk"><img src="assets/svg-cdccfb6867ec.svg" alt=""></span><p class="t-c14">Everything in Starter</p></div>
+          <div class="feature"><span class="tk"><img src="assets/svg-cdccfb6867ec.svg" alt=""></span><p class="t-c14">More integrations</p></div>
+          <div class="feature"><span class="tk"><img src="assets/svg-cdccfb6867ec.svg" alt=""></span><p class="t-c14">Campaign activation in your&nbsp;tools</p></div>
+          <div class="feature"><span class="tk"><img src="assets/svg-cdccfb6867ec.svg" alt=""></span><p class="t-c14">Experiments and the learning&nbsp;loop</p></div>
+        </div>
+      </div>
+      <div class="plan reveal">
+        <div class="name-row"><p class="t-caps">Scale</p></div>
+        <p class="desc t-c14">For large volumes and custom&nbsp;stacks.</p>
+        <div class="price"><p class="t-n64">Custom</p><p class="t-caps">/ month</p></div>
+        <a class="btn btn-secondary" href="#demo" data-demo>Talk to sales</a>
+        <div class="divider"></div>
+        <div class="features">
+          <div class="feature"><span class="tk"><img src="assets/svg-97d27d5bffa5.svg" alt=""></span><p class="t-c14">Everything in Growth</p></div>
+          <div class="feature"><span class="tk"><img src="assets/svg-97d27d5bffa5.svg" alt=""></span><p class="t-c14">Large customer volumes</p></div>
+          <div class="feature"><span class="tk"><img src="assets/svg-97d27d5bffa5.svg" alt=""></span><p class="t-c14">Advanced automation</p></div>
+          <div class="feature"><span class="tk"><img src="assets/svg-97d27d5bffa5.svg" alt=""></span><p class="t-c14">Custom integrations</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec faq" id="faq">
+  <div class="wrap faq-in">
+    <div class="faq-left reveal">
+      <div class="title-group" style="width:auto">
+        <p class="t-caps">FAQ</p>
+        <h2 class="t-h2">Questions before&nbsp;you&nbsp;start</h2>
+      </div>
+      <a class="btn btn-primary btn-s" href="#demo" data-demo>Contact Us</a>
+    </div>
+    <div class="faq-items reveal">
+      <div class="faq-item open">
+        <button class="faq-q" aria-expanded="true"><span class="t-h5">What data does Opus connect to?</span><span class="toggle"><i></i></span></button>
+        <div class="faq-a"><div><p class="t-b16">Billing (Stripe, Chargebee), product analytics (Mixpanel, Amplitude), CRM (HubSpot, Salesforce), support (Intercom, Zendesk), lifecycle tools, and customer&nbsp;feedback.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span class="t-h5">Does it replace our CRM or email tool?</span><span class="toggle"><i></i></span></button>
+        <div class="faq-a"><div><p class="t-b16">No. Opus decides who needs what. Klaviyo, Braze, Customer.io, HubSpot, Intercom and the rest keep doing the&nbsp;sending.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span class="t-h5">How is it different from analytics?</span><span class="toggle"><i></i></span></button>
+        <div class="faq-a"><div><p class="t-b16">Analytics shows what happened. Opus shows who is affected, why, what it is worth and what to do&nbsp;next.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span class="t-h5">Why not just offer a discount?</span><span class="toggle"><i></i></span></button>
+        <div class="faq-a"><div><p class="t-b16">Different problems need different fixes. Opus starts with the lowest-cost intervention likely to change behaviour, which protects&nbsp;margin.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span class="t-h5">Who is it for?</span><span class="toggle"><i></i></span></button>
+        <div class="faq-a"><div><p class="t-b16">Subscription SaaS, subscription commerce, consumer apps and memberships. Growth, lifecycle, customer success, product teams and&nbsp;founders.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span class="t-h5">How is pricing calculated?</span><span class="toggle"><i></i></span></button>
+        <div class="faq-a"><div><p class="t-b16">Plans start at $99 a month. Longer term, pricing can follow the customers you manage and the revenue Opus influences, not&nbsp;seats.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <span class="gl gl-l"></span><span class="gl gl-r"></span>
+  <div class="f-row"><div class="wrap f-cta">
+    <div class="f-lead">
+      <div class="f-mark"><img src="assets/svg-c8855d873699.svg" alt=""><span>Opus</span></div>
+      <div class="f-title"><span class="t-h3">Your next growth opportunity</span><span class="t-h3 dim">is already inside your customer data.</span></div>
+    </div>
+    <div class="f-actions">
+      <a class="btn btn-accent btn-s" href="#opportunities">Find growth opportunities</a>
+      <a class="btn btn-sd btn-s" href="#demo" data-demo>Book a demo</a>
+    </div>
+  </div></div>
+  <div class="f-row"><div class="wrap f-links">
+    <div class="f-col"><span class="h">Product</span><a href="#top">Overview</a><a href="#map">Opus</a><a href="#opportunities">Opportunities</a><a href="#nba">Next best action</a><a href="#campaign">Campaigns</a><a href="#results">Results</a><a href="#top">Ask Opus</a></div>
+    <div class="f-col"><span class="h">Use cases</span><a href="#template-preview">Subscription SaaS</a><a href="#template-preview">Subscription commerce</a><a href="#template-preview">Consumer apps</a><a href="#template-preview">Memberships</a></div>
+    <div class="f-col"><span class="h">Teams</span><a href="#template-preview">Growth</a><a href="#template-preview">Customer Success</a><a href="#template-preview">Lifecycle and CRM</a><a href="#template-preview">Product Growth</a><a href="#template-preview">Founders</a></div>
+    <div class="f-col"><span class="h">Company</span><a href="#template-preview">About</a><a href="#pricing">Pricing</a><a href="#integrations">Integrations</a><a href="#template-preview">Security</a><a href="#template-preview">Documentation</a><a href="#template-preview">Blog</a><a href="#faq">Contact</a></div>
+  </div></div>
+  <div class="f-row"><div class="wrap f-works">
+    <div class="l">Works with
+      <div class="f-logos">
+        <span><img src="assets/svg-5b115b8abd32.svg" alt="Stripe"></span><span><img src="assets/svg-dff96c78168f.svg" alt="Mixpanel"></span><span><img src="assets/svg-bc7fc4635df1.svg" alt="HubSpot"></span><span><img src="assets/svg-10a4052fb2c1.svg" alt="Intercom"></span><span><img src="assets/svg-6c3db3b07e68.svg" alt="Shopify"></span><span><img src="assets/svg-2db8b96b85fd.svg" alt="Salesforce"></span>
+      </div>
+    </div>
+    <a class="to-top" href="#top">Back to top<i><img src="assets/svg-cca69f38ba48.svg" alt=""></i></a>
+  </div></div>
+  <div class="f-row"><div class="wrap f-legal">
+    <span>© 2026 Opus. Interactive template with illustrative data.</span>
+    <div class="social"><a href="#template-preview" aria-label="X"><img src="assets/svg-1d91597325da.svg" alt=""></a><a href="#template-preview" aria-label="LinkedIn"><img src="assets/svg-4a498984e780.svg" alt="" style="padding:2.08px;transform:rotate(180deg) scaleX(-1)"></a></div>
+  </div></div>
+</footer>
+<span id="template-preview" hidden></span>
+
+
+<!-- ============ BOOK A DEMO (Book_Demo_Modal 312:1282): form, inline errors, thank-you state in the same card ============ -->
+<div class="demo-modal" id="demo" role="dialog" aria-modal="true" aria-labelledby="demo-title" hidden>
+  <div class="dm-overlay" data-close></div>
+  <div class="dm-card">
+    <form class="dm-form" novalidate onsubmit="return false">
+      <div class="dm-head">
+        <div class="dm-tx">
+          <h2 class="t-h4" id="demo-title">Book a demo</h2>
+          <p class="t-c14 c-2">Explore how Opus could work with your customer data. <br>Download a brief to plan your demo.</p>
+        </div>
+        <button type="button" class="dm-close" data-close aria-label="Close"><img src="assets/svg-e68105e98da3.svg" alt=""></button>
+      </div>
+      <div class="dm-fields">
+        <label class="dm-field"><span class="t-c14m">Company name</span><input name="company" type="text" placeholder="Acme Inc." autocomplete="organization"><span class="dm-err t-c12" aria-live="polite"></span></label>
+        <label class="dm-field"><span class="t-c14m">Business email</span><input name="email" type="email" placeholder="name@company.com" autocomplete="email"><span class="dm-err t-c12" aria-live="polite"></span></label>
+        <label class="dm-field"><span class="t-c14m">Industry</span><span class="dm-select"><select name="industry">
+          <option value="" selected disabled>Select your industry</option>
+          <option>SaaS</option><option>E-commerce</option><option>Media and subscriptions</option><option>Fintech</option><option>Health and wellness</option><option>Education</option><option>Other</option>
+        </select><img src="assets/svg-9e91d7a8f5e3.svg" alt=""></span><span class="dm-err t-c12" aria-live="polite"></span></label>
+      </div>
+      <p class="t-c12 c-2">Interactive template preview. Your details stay on this device.</p>
+<button class="btn btn-accent dm-submit" type="submit">Download demo brief</button>
+    </form>
+    <div class="dm-success" hidden>
+      <div class="dm-head"><button type="button" class="dm-close" data-close aria-label="Close"><img src="assets/svg-e68105e98da3.svg" alt=""></button></div>
+      <div class="dm-body">
+        <span class="dm-badge"><svg width="15.5" height="12.5" viewBox="0 0 15.5 12.5" fill="none" aria-hidden="true"><path pathLength="1" d="M0.75 8.25L4.25 11.75L14.75 0.75" stroke="#141412" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div class="dm-tx">
+          <h2 class="t-h4">Your demo brief is ready</h2>
+          <p class="t-c14 c-2">Your brief was downloaded to this device. No request was sent and no demo has been booked.</p>
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary dm-done" data-close>Close</button>
+    </div>
+  </div>
+</div>
+<script src="site.config.js"></script>
+<script src="site.js"></script>
+<script src="template.js"></script>
+</body>
+</html>
