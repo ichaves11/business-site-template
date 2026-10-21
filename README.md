@@ -1,31 +1,38 @@
-# Business website template
+# Three website templates
 
-A responsive, buildless business landing page inspired by the composition and interaction quality of Foresee and Audience Map. Built with Nate Herk's Scroll Craft skill and its unchanged runtime.
+Each website owns its HTML, styles, scripts, assets, configuration, documentation and `dist/` output. Root scripts only select, check, serve and package a site.
 
-## Preview
+| Website | Folder | Preview command | Local URL |
+|---|---|---|---|
+| #1 · Approved business template | `websites/01-business` | `npm run dev:1` | http://localhost:4517 |
+| #2 · Opus | `websites/02-template` | `npm run dev:2` | http://localhost:4518 |
+| #3 · Reserved | `websites/03-template` | `npm run dev:3` | http://localhost:4519 |
 
-Run `npm run dev`, then open http://localhost:4517. No build step or API credentials are required.
+Run commands from this repository's root. `npm run dev` remains an alias for website #1. A reserved website gives a clear message until it has been implemented. Stop an older preview with Ctrl+C before restarting it after this reorganization.
 
-## Make it yours
+## Commands
 
-- `site.config.js`: brand, page title, description and optional HTTPS booking URL. When a booking URL is set, the two primary “Let’s build” links point there and use `bookingLabel`. Otherwise they open the working growth planner.
-- `index.html`: headlines, services, process and questions. “Studio” is a neutral placeholder identity, not a real business claim.
-- `site.css`: palette tokens, typography and responsive layouts.
-- `site.js`: the three growth routes and downloadable project brief.
-- `assets/`: bundled photograph, font, mark and license notices. Replace imagery and mark for your brand. The star is an editable template mark.
+- `npm run build:1`, `build:2`, `build:3`: build one site into its own `dist/`.
+- `npm run build:all`: build every ready site.
+- `npm run check`: validate scripts, catalog, links and public assets.
+- `npm test`: check independent previews/builds and cross-site isolation.
 
-The route selector is stored in this browser only. The brief is generated locally as a text download. There is no backend, analytics, email delivery or fake submission success. A real booking service can be connected through the configuration.
+Publish only the chosen site's `dist/` folder. Each site is designed to be hosted at the root of its own domain/deployment. Do not deploy the repository root. Ports are unique; browser storage for new templates must use site-specific keys.
 
-## Files to publish
+## Structure
 
-`index.html`, `site.css`, `site.js`, `site.config.js`, `scrollcraft.css`, `scrollcraft.js` and `assets/`.
+```
+websites.json             # Site status, directory and preview port
+scripts/                  # Shared development tools, no website UI
+websites/
+  01-business/            # Approved website #1
+  02-template/            # Opus, website #2
+  03-template/            # Reserved for website #3
+lab/                      # Ignored browser evidence, grouped by website
+```
 
-`npm run build` copies exactly these public files to `dist/`. Never publish the repository root or `lab/`, which contains development evidence. The generated `dist/` is suitable for static hosting.
+Site-specific public files are explicitly listed in `site.manifest.json`. Documentation and test artifacts are excluded from builds and previews. No website imports styles, scripts or assets from another website.
 
-## Checks
+## Saved approved version
 
-`npm run check` validates application JavaScript. The redesign was also checked in headless Chrome at 1440px, 390px and 360px, with reduced motion and JavaScript disabled. See `VERIFICATION.md` for results and limitations.
-
-## Credits
-
-See `assets/CREDITS.md`, `assets/Manrope-OFL.txt` and `assets/ScrollCraft-LICENSE.txt`.
+Git tag `website-01-approved` identifies the approved website before reorganization. Its runtime files are preserved byte-for-byte in `websites/01-business/`. Site-specific instructions are in each folder's README.

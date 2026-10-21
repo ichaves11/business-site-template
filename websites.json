@@ -1,0 +1,5 @@
+[
+  {"id":1,"name":"Business growth template","directory":"websites/01-business","port":4517,"status":"ready"},
+  {"id":2,"name":"Website 2","directory":"websites/02-template","port":4518,"status":"planned"},
+  {"id":3,"name":"Website 3","directory":"websites/03-template","port":4519,"status":"planned"}
+]

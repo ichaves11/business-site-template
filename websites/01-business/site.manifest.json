@@ -1,0 +1,11 @@
+{
+  "public": [
+    "index.html",
+    "site.css",
+    "site.js",
+    "site.config.js",
+    "scrollcraft.css",
+    "scrollcraft.js",
+    "assets"
+  ]
+}
